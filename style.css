@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 374px) {
+  body {
+    background-image: url(background-1.svg);
+    background-position: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary);
+    animation: logo 2s ease-in-out;
+    text-decoration: none;
+  }
+
+  .div-container {
+    width: 375px;
+    height: 5410px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 88%;
+    margin-left: 10%;
+  }
+
+  .My-Logo {
+    display: flex;
+    width: 100%;
+    color: #6070ff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    height: 20px;
+  }
+
+  .header-Line-1 {
+    margin: 2px;
+    width: 16px;
+    border: 2px solid #acb7c3;
+  }
+
+  .header-Line-2 {
+    margin: 2px;
+    width: 16px;
+    border: 2px solid #acb7c3;
+  }
+
+  .header-Line-3 {
+    margin: 2px;
+    width: 16px;
+    border: 2px solid #acb7c3;
+  }
+
+  .section-1 {
+    display: flex;
+    justify-content: start;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15vh;
+  }
+
+  .heading-1 {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .First-heading {
+    width: 327px;
+    height: 150px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+  }
+
+  .First-heading-description {
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 40scree;
+    line-height: 24px;
+    width: 327px;
+    height: 146px;
+  }
+
+  .Connect-heading {
+    margin-top: 3vh;
+    display: flex;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+
+  .icons-div {
+    position: relative;
+    margin-top: 3vh;
+    width: 170.17px;
+    height: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 0;
+    margin-left: 1.8rem;
+    order: 3;
+    flex: none;
+    margin-top: 9px;
+  }
+
+  .icons {
+    margin: 9.5px;
+    width: 19.99px;
+    height: 19px;
+  }
+
+  .twitter {
+    width: 19.99px;
+    height: 19.96px;
+  }
+
+  .medium {
+    width: 20px;
+    height: 19px;
+  }
+
+  .github {
+    width: 17.99px;
+    height: 20px;
+  }
+
+  .angellist {
+    width: 14.17px;
+    height: 20px;
+  }
+}
