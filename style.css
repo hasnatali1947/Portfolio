@@ -36,7 +36,6 @@
     display: flex;
     width: 100%;
     color: #6070ff;
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -83,7 +82,6 @@
   .First-heading {
     width: 327px;
     height: 150px;
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -99,7 +97,6 @@
     align-items: center;
     flex-direction: column;
     font-size: 16px;
-    font-weight: 40scree;
     line-height: 24px;
     width: 327px;
     height: 146px;
@@ -108,7 +105,6 @@
   .Connect-heading {
     margin-top: 3vh;
     display: flex;
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -127,8 +123,6 @@
     flex-grow: 0;
     margin-left: 1.8rem;
     order: 3;
-    flex: none;
-    margin-top: 9px;
   }
 
   .icons {
