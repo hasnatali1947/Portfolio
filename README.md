@@ -18,7 +18,7 @@
 
 # 📖 Hello-microverse <a name="about-project"></a>
 
-**Hello-microverse**, In this project, i setup only Hello-microverse.
+**Hello-microverse**, in this project, i setup only Hello-microverse.
 
 ## 🛠️ Built With <a name="built-with"></a>
 
