@@ -7,68 +7,51 @@
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 374px) {
-  body {
-    background-image: url(background-1.svg);
-    background-position: center;
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--primary);
-    animation: logo 2s ease-in-out;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+}
+
+@media screen and (max-width: 767px) {
+  header div {
+    margin-left: 5%;
+  }
+
+  header div a {
+    list-style: none;
     text-decoration: none;
   }
 
-  .div-container {
-    width: 375px;
-    height: 5410px;
-  }
-
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    width: 88%;
-    margin-left: 10%;
-  }
-
-  .My-Logo {
-    display: flex;
-    width: 100%;
-    color: #6070ff;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-    height: 20px;
-  }
-
-  .header-Line-1 {
-    margin: 2px;
-    width: 16px;
-    border: 2px solid #acb7c3;
-  }
-
-  .header-Line-2 {
-    margin: 2px;
-    width: 16px;
-    border: 2px solid #acb7c3;
-  }
-
-  .header-Line-3 {
-    margin: 2px;
-    width: 16px;
-    border: 2px solid #acb7c3;
+  header nav {
+    margin-right: 5%;
   }
 
   .section-1 {
     display: flex;
     justify-content: start;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 15vh;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 
   .heading-1 {
@@ -76,78 +59,50 @@
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    width: 50%;
+    margin-top: 10vh;
+    width: 100%;
   }
 
   .First-heading {
-    width: 327px;
+    display: flex;
+    align-items: center;
+    margin: 3%;
+    width: 94%;
     height: 150px;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    display: flex;
-    align-items: center;
     color: #172b4d;
   }
 
   .First-heading-description {
-    margin-top: 3vh;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 16px;
-    line-height: 24px;
-    width: 327px;
-    height: 146px;
+    margin: 3%;
+    width: 94%;
   }
 
   .Connect-heading {
-    margin-top: 3vh;
     display: flex;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
+    margin: 3%;
+    width: 94%;
   }
 
   .icons-div {
-    position: relative;
-    margin-top: 3vh;
-    width: 170.17px;
-    height: 20px;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-grow: 0;
-    margin-left: 1.8rem;
-    order: 3;
+    margin: 3%;
+    width: 94%;
+    height: 20px;
+    list-style: none;
   }
 
   .icons {
-    margin: 9.5px;
-    width: 19.99px;
-    height: 19px;
-  }
-
-  .twitter {
-    width: 19.99px;
-    height: 19.96px;
-  }
-
-  .medium {
+    margin-left: 3vh;
     width: 20px;
-    height: 19px;
-  }
-
-  .github {
-    width: 17.99px;
     height: 20px;
   }
-
-  .angellist {
-    width: 14.17px;
-    height: 20px;
-  }
-}
