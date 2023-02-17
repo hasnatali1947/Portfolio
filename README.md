@@ -1,7 +1,6 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Awesome books ](#-awesome-books-)
   - [🛠️ Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -16,9 +15,9 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 Hello-microverse <a name="about-project"></a>
+# 📖 About <a name="about-project"></a>
 
-**Hello-microverse**, in this project, i setup only Hello-microverse.
+This is my portfolio Project. In which , all of my details are available.
 
 ## 🛠️ Built With <a name="built-with"></a>
 
@@ -28,7 +27,9 @@ HTML | CSS
 
 ### Key Features <a name="key-features"></a>
 
-> A simple HTML file that says Hello Microverse
+> My Project Links
+> Details of my self
+> Contact avaiable
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,7 +59,7 @@ And run `npm start` to launch the project.
 
 Clone this repository to your desired folder:
 
-  `git clone https://github.com/hasnatali1947/Hello-microverse`
+  `git clone https://github.com/hasnatali1947/Portfolio.git`
 
 ### Usage
 
@@ -74,7 +75,7 @@ To run the project, open index.html with your preferred web browser or open it w
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Feel free to check [issues page](https://github.com/hasnatali1947/Hello-microverse/issues).
+Feel free to check [issues page](https://github.com/hasnatali1947/Portfolio/issues).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 

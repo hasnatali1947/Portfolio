@@ -19,6 +19,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: fixed;
   justify-content: space-between;
   width: 100%;
   height: 10vh;
@@ -27,11 +28,14 @@ header {
 @media screen and (max-width: 767px) {
   header div {
     margin-left: 5%;
+    
   }
-
+  
   header div a {
+    color:#6070FF ;
     list-style: none;
     text-decoration: none;
+    font-size: 8px;
   }
 
   header nav {
@@ -80,6 +84,7 @@ header {
     display: flex;
     margin: 3%;
     width: 94%;
+    font-size: 16px;
   }
 
   .Connect-heading {
