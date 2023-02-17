@@ -15,7 +15,7 @@
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
-# 📖 About <a name="about-project"></a>
+# 📖 Portfolio <a name="about-project"></a>
 
 This is my portfolio Project. In which , all of my details are available.
 
