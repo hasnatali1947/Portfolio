@@ -10,10 +10,10 @@
 body {
   background: #e5e5e5;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  overflow-x: hidden;
 }
 
 header {
@@ -117,11 +117,13 @@ header {
   }
 
   /* ///////////////////////////section2///////////////////////   */
+
   .main-2 {
     display: grid;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    grid-auto-columns:center ;
     width: 100%;
     height: 100%;
     background: #e5e5e5;
@@ -140,7 +142,7 @@ header {
     background: #fff;
     padding: 10px;
     gap: 12px;
-    margin-left: 9%;
+    margin-left: 7%;
   }
 
   .portfolio-idcard {
@@ -206,8 +208,8 @@ header {
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 53px;
-    height: 24px;
+    width: 33px;
+    height: 20px;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -224,8 +226,8 @@ header {
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 45px;
-    height: 24px;
+    width: 30px;
+    height: 20px;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -242,8 +244,8 @@ header {
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 89px;
-    height: 24px;
+    width: 65px;
+    height: 20px;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -254,6 +256,7 @@ header {
 
   .tonic-1-HCJ {
     display: flex;
+    list-style: none;
   }
 
   .Button-SeeProject-1 {
@@ -287,7 +290,7 @@ header {
     background: #fff;
     padding: 10px;
     gap: 12px;
-    margin-left: 9%;
+    margin-left: 7%;
   }
 
   .portfolio-idcard-2 {
@@ -350,13 +353,14 @@ header {
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 53px;
-    height: 24px;
+    width: 33px;
+    height: 20px;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    margin-left: 1vh;
   }
 
   .Multi-css {
@@ -367,8 +371,8 @@ header {
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 45px;
-    height: 24px;
+    width: 30px;
+    height: 20px;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -385,8 +389,8 @@ header {
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 89px;
-    height: 24px;
+    width: 65px;
+    height: 20px;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
@@ -397,6 +401,7 @@ header {
 
   .Multi-HCJ {
     display: flex;
+    list-style: none;
   }
 
   .Button-SeeProject-2 {
@@ -430,7 +435,7 @@ header {
     background: #fff;
     padding: 10px;
     gap: 12px;
-    margin-left: 9%;
+    margin-left: 7%;
   }
 
   .portfolio-idcard-3 {
@@ -519,7 +524,7 @@ header {
     background: #fff;
     padding: 16px;
     gap: 12px;
-    margin-left: 8%;
+    margin-left: 7%;
   }
 
   .Multi-description-1 {
@@ -774,5 +779,27 @@ header {
     border: 1px solid #dfe1e6;
     width: 327px;
     margin-left: 3%;
+  }
+  button:hover{
+    scale: 0.97;
+    background-color: rgba(34, 34, 214, 0.75);
+  }
+  button:active{
+    color: #2176c0;
+  }
+  button{
+    cursor: pointer;
+  }
+
+  .main-3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .html-1{
+    margin-left: -0.5vh;
   }
 }
