@@ -118,7 +118,8 @@ header {
 
   /* ///////////////////////////section2///////////////////////   */
   .main-2 {
-    display: flex;
+    display: grid;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -137,14 +138,15 @@ header {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     background: #fff;
-    padding: 16px;
+    padding: 10px;
     gap: 12px;
+    margin-left: 9%;
   }
 
   .portfolio-idcard {
     list-style-type: none;
-    margin-left: -3px;
-    margin-top: -3vh;
+    margin-left: 3%;
+    margin-top: -7vh;
   }
 
   .Tonic-1 a {
@@ -152,9 +154,17 @@ header {
     color: #172b4d;
   }
 
+  .tonic {
+    margin-left: 1.5vh;
+  }
+
   .Canopy-1 a {
     text-decoration: none;
     color: #344563;
+  }
+
+  .Tonic-description {
+    margin-left: 1.5vh;
   }
 
   .Canopy-1 {
@@ -203,6 +213,7 @@ header {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    margin-left: 1.5vh;
   }
 
   .tonic-1-css {
@@ -258,6 +269,7 @@ header {
     color: #396df2;
     letter-spacing: 0.03em;
     margin-top: 8px;
+    margin-left: 1.5vh;
   }
 
   /* /////////////////section3////////////// */
@@ -273,19 +285,24 @@ header {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     background: #fff;
-    padding: 20px;
+    padding: 10px;
     gap: 12px;
+    margin-left: 9%;
   }
 
   .portfolio-idcard-2 {
     list-style-type: none;
-    margin-left: -2px;
-    margin-top: -20px;
+    margin-left: 3%;
+    margin-top: -40px;
   }
 
   .Multi-post a {
     text-decoration: none;
     color: #172b4d;
+  }
+
+  .multi-post-1 {
+    margin-left: 1vh;
   }
 
   .Canopy-2 a {
@@ -301,6 +318,7 @@ header {
     font-size: 13px;
     color: #7a869a;
     margin-top: 2vh;
+    margin-left: 3%;
   }
 
   .Type2015-2 {
@@ -394,6 +412,7 @@ header {
     color: #396df2;
     letter-spacing: 0.03em;
     margin-top: 8px;
+    margin-left: 1vh;
   }
 
   /* ///////////////////////section4///////////////// */
@@ -404,19 +423,20 @@ header {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    height: 89vh;
+    height: 91vh;
     width: 48vh;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     background: #fff;
-    padding: 16px;
+    padding: 10px;
     gap: 12px;
+    margin-left: 9%;
   }
 
   .portfolio-idcard-3 {
     list-style-type: none;
-    margin-left: -3px;
-    margin-top: -3vh;
+    margin-left: 3%;
+    margin-top: -10vh;
   }
 
   .Tonic-2 a {
@@ -437,6 +457,14 @@ header {
     font-size: 13px;
     color: #7a869a;
     margin-top: 2vh;
+  }
+
+  .canopy-span {
+    margin-left: 1.5vh;
+  }
+
+  .canopy-span-1 {
+    margin-left: 1.5vh;
   }
 
   .Type2015-3 {
@@ -460,63 +488,6 @@ header {
     line-height: 24px;
   }
 
-  .tonic-2-html {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 53px;
-    height: 24px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .tonic-2-css {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 45px;
-    height: 24px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 2vh;
-  }
-
-  .tonic-2-javaScript {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 89px;
-    height: 24px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 2vh;
-  }
-
-  .tonic-2-HCJ {
-    display: flex;
-  }
-
   .Button-SeeProject-3 {
     display: flex;
     align-items: center;
@@ -530,6 +501,7 @@ header {
     color: #396df2;
     letter-spacing: 0.03em;
     margin-top: 8px;
+    margin-left: 1.5vh;
   }
 
   /* ///////////////section5/////////////// */
@@ -545,19 +517,28 @@ header {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     background: #fff;
-    padding: 20px;
+    padding: 16px;
     gap: 12px;
+    margin-left: 8%;
+  }
+
+  .Multi-description-1 {
+    margin-left: 1.5vh;
   }
 
   .portfolio-idcard-4 {
     list-style-type: none;
-    margin-left: -2px;
+    margin-left: -5px;
     margin-top: -20px;
   }
 
   .Multi-post-2 a {
     text-decoration: none;
     color: #172b4d;
+  }
+
+  .Multi-post {
+    margin-right: 2.5vh;
   }
 
   .Canopy-4 a {
@@ -586,71 +567,6 @@ header {
     color: #7a869a;
     font-size: 13px;
     list-style-type: disc;
-  }
-
-  .Multi-2-description {
-    color: #344563;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .Multi-2-html {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 53px;
-    height: 24px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .Multi-2-css {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 45px;
-    height: 24px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 2vh;
-  }
-
-  .Multi-2-javaScript {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 89px;
-    height: 24px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 2vh;
-  }
-
-  .Multi-2-HCJ {
-    display: flex;
   }
 
   .Button-SeeProject-4 {
