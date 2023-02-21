@@ -591,7 +591,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 5vh;
+    height: 10vh;
     padding-bottom: 1vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.242);
     margin-left: 7%;
@@ -619,7 +619,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 5vh;
+    height: 10vh;
     padding-bottom: 1vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.242);
     margin-left: 7%;
@@ -654,22 +654,67 @@ main {
     padding: 103px 24px 8px;
     background-color: #6070ff;
     border-top-left-radius: 70px;
-    background-image: url("contact\ form\ shapes-mobile@2x.png");
-    background-position: 100px -14px;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: contain;
+  }
+
+  .div-imges {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .div2-imges {
+    position: absolute;
+    width: 100%;
+    margin-top: -11vh;
+  }
+
+  .img-1 {
+    position: absolute;
+    right: 0;
+    margin-top: 7.5vh;
+  }
+
+  .img-2 {
+    position: absolute;
+    right: 0;
+    margin-top: 2.9vh;
+  }
+
+  .img-3 {
+    position: absolute;
+    left: 40%;
+    height: 3.5vh;
+    margin-top: 10vh;
+  }
+
+  .img-4 {
+    position: absolute;
+    right: 49px;
+    bottom: 7%;
+    width: 13vh;
+  }
+
+  .img-5 {
+    position: absolute;
+    right: 89px;
+    bottom: 6.5%;
+    height: 5vh;
   }
 
   .form_heading {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 0;
+    padding: 2px 0;
   }
 
   .form_heading h2 {
     font-size: 40px;
     font-weight: 700;
+    line-height: 52px;
     color: #fff;
   }
 
@@ -693,6 +738,7 @@ main {
     border: none;
     font-size: 17px;
     font-weight: 400;
+    width: 80%;
   }
 
   .user_email {
@@ -702,6 +748,7 @@ main {
     border: none;
     font-size: 17px;
     font-weight: 400;
+    width: 80%;
   }
 
   .massage {
@@ -713,6 +760,7 @@ main {
     color: #b3bac5;
     border-radius: 8px;
     border: none;
+    width: 80%;
   }
 
   .get_in_touch {
@@ -732,5 +780,14 @@ main {
 
   .footer-ul {
     list-style: none;
+  }
+
+  .botton-line {
+    width: 134px;
+    height: 5px;
+    background: #0d151e;
+    border-radius: 10px;
+    margin-left: 35%;
+    margin-top: 40px;
   }
 }
