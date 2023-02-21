@@ -315,6 +315,9 @@
         </div>
       </section>
 
+      
+      <!-- /////////footer///////////// -->
+
       <footer class="Contact_form_container">
         <div class="div-imges">
           <img class="img-1" src="top-1.png" alt="" />
@@ -330,7 +333,7 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form class="form" action="">
+          <form class="form" action="https://formspree.io/f/{form_id}" method="post">
             <ul class="footer-ul">
               <li>
                 <input
@@ -338,6 +341,7 @@
                   name="User_Name"
                   type="text"
                   required
+                  maxlength="30"
                   placeholder="User Name"
                 />
               </li>
@@ -348,21 +352,24 @@
                   type="email"
                   required
                   placeholder="User Email"
-                />
-              </li>
-              <li>
-                <textarea
+                  />
+                </li>
+                <li>
+                  <textarea
                   class="massage"
                   name="massage"
                   placeholder="write your massage here"
+                  maxlength="300"
                   cols="30"
                   rows="10"
                 ></textarea>
               </li>
               <li>
-                <button class="get_in_touch">Get in touch</button>
+                <button class="get_in_touch" submit="Enter" >Get in touch</button>
               </li>
-              <div class="botton-line"></div>
+              <div class="bottom-line-div">
+                <div class="bottom-line"></div>
+              </div>
             </ul>
           </form>
         </div>
