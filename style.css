@@ -591,7 +591,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 5vh;
+    height: 10vh;
     padding-bottom: 1vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.242);
     margin-left: 7%;
@@ -619,7 +619,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    height: 5vh;
+    height: 10vh;
     padding-bottom: 1vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.242);
     margin-left: 7%;
@@ -641,5 +641,171 @@ main {
     font-size: 20px;
     line-height: 24px;
     color: #000;
+  }
+
+  .Contact_form_container {
+    background-color: #fff;
+  }
+
+  .Contact_form {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 103px 24px 8px;
+    background-color: #6070ff;
+    border-top-left-radius: 70px;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .div-imges {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .div2-imges {
+    position: absolute;
+    width: 100%;
+    margin-top: -11vh;
+  }
+
+  .img-1 {
+    position: absolute;
+    right: 0;
+    margin-top: 7.5vh;
+  }
+
+  .img-2 {
+    position: absolute;
+    right: 0;
+    margin-top: 2.9vh;
+  }
+
+  .img-3 {
+    position: absolute;
+    left: 40%;
+    height: 3.5vh;
+    margin-top: 10vh;
+  }
+
+  .img-4 {
+    position: absolute;
+    right: 49px;
+    bottom: -2.2vh;
+    width: 9vh;
+  }
+
+  .img-5 {
+    position: absolute;
+    right: 92px;
+    bottom: -2.5vh;
+    height: 4vh;
+  }
+
+  .form_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 0;
+  }
+
+  .form_heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #fff;
+  }
+
+  .Contact_form p {
+    color: #ebebff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user_name {
+    margin-top: 47px;
+    border-radius: 8px;
+    padding: 15px 38px 15px 16px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    width: 80%;
+  }
+
+  .user_email {
+    margin-top: 20px;
+    padding: 15px 38px 15px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    width: 80%;
+  }
+
+  .massage {
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 15px 38px 15px 16px;
+    color: #b3bac5;
+    border-radius: 8px;
+    border: none;
+    width: 80%;
+  }
+
+  .get_in_touch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 16px 14px 16px;
+    background: #fff;
+    border-radius: 8px;
+    width: 142px;
+    margin-top: 28px;
+    color: #6070ff;
+    border: none;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .get_in_touch:hover {
+    border: 1px solid rgb(14, 14, 223);
+    background-color: rgba(26, 59, 208, 0.929);
+    color: white;
+  }
+
+  .get_in_touch:active {
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: blue;
+  }
+
+  .footer-ul {
+    list-style: none;
+  }
+
+  .bottom-line-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom-line {
+    width: 134px;
+    height: 5px;
+    background: #0d151e;
+    border-radius: 10px;
+    margin-top: 40px;
   }
 }
