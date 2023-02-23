@@ -5,6 +5,7 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 html {
@@ -40,6 +41,14 @@ main {
 @media screen and (max-width: 767px) {
   header div {
     margin-left: 5%;
+  }
+
+  .header-desktop {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: none;
   }
 
   header div a {
@@ -870,6 +879,8 @@ main {
   }
 }
 
+/* //////////////media-query.////////// */
+
 @media (min-width: 767px) {
   header div {
     margin-left: 5%;
@@ -882,8 +893,68 @@ main {
     font-size: 8px;
   }
 
-  header nav {
-    margin-right: 5%;
+  header div a h1 {
+    color: #6070ff;
+    margin-left: 7vh;
+  }
+
+  .header-BG {
+    position: absolute;
+    height: 90%;
+    width: 98%;
+    background-image: url("Header\ bg.svg");
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: 1;
+  }
+
+  .header-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    z-index: 100;
+    position: fixed;
+    background-color: #fff;
+  }
+
+  .Menu {
+    margin: 10vh;
+    display: flex;
+    list-style: none;
+    color: #344563;
+  }
+
+  .menuItem1 {
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 4vh;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .menuItem2 {
+    cursor: pointer;
+    margin-right: 4vh;
+  }
+
+  .menuItem3 {
+    cursor: pointer;
+    margin-right: 6vh;
+  }
+
+  .a {
+    text-decoration: none;
+  }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .mob-main {
+    display: none;
   }
 
   .div-1 {
@@ -895,19 +966,25 @@ main {
   }
 
   .section-1 {
-    display: flex;
-    justify-content: start;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 150px;
+    background-color: white;
+  }
+
+  .desktop-menu {
+    margin-top: 10vh;
   }
 
   .background-img {
     border-bottom-left-radius: 70px;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 85%;
     z-index: -1;
     background: #fff;
   }
@@ -917,8 +994,8 @@ main {
     justify-content: start;
     align-items: start;
     flex-direction: column;
-    margin-top: 15vh;
-    width: 85%;
+    margin-top: 20vh;
+    width: 79%;
     margin-left: 20vh;
     height: 50%;
   }
@@ -934,17 +1011,16 @@ main {
     font-size: 48px;
     line-height: 52px;
     color: #172b4d;
-    margin-top: 11vh;
+    margin-top: -3vh;
     white-space: pre;
     margin-left: -12vh;
   }
 
   .First-heading-description {
     display: flex;
-    margin: 3%;
     width: 80%;
     font-size: 20px;
-    margin-top: -5vh;
+    margin-top: -20px;
     color: #344563;
   }
 
@@ -955,24 +1031,35 @@ main {
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
-    margin: 3%;
     width: 94%;
-    margin-top: 1vh;
+    margin-top: 2vh;
   }
 
   .icons-div {
+    width: 60%;
     display: flex;
-    margin: 2%;
-    margin-left: 15%;
-    width: 80%;
-    height: 20px;
+    margin: 10px 0;
+  }
+
+  .socialLink {
+    display: flex;
+    margin: 10px 0;
+  }
+
+  .socialLink li {
     list-style: none;
   }
 
   .icons {
-    margin-left: 3vh;
+    margin-left: 2vh;
     width: 20px;
     height: 20px;
+  }
+
+  .socialIcon {
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   /* artical sections */
@@ -1010,9 +1097,21 @@ main {
     width: 100%;
   }
 
+  .div-2 {
+    height: 100%;
+  }
+
   .Tonic-1 a {
     text-decoration: none;
     color: #172b4d;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .Tonic-1 a h1 {
+    margin-top: 2.5vh;
+    margin-left: 3vh;
   }
 
   .Canopy-1 {
@@ -1025,8 +1124,12 @@ main {
   }
 
   .Canopy-1 a {
+    margin-left: 3vh;
     text-decoration: none;
     color: #344563;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .back-end-dev {
@@ -1034,20 +1137,27 @@ main {
     margin-left: 3vh;
     opacity: 90%;
     color: #7a869a;
-    font-size: 13px;
     list-style-type: disc;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .Type2015 {
     margin-left: 3vh;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .Tonic-1-description {
+    margin-left: 3vh;
     color: #344563;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
+    margin-top: 3vh;
   }
 
   .idcard-1-buttons {
@@ -1056,6 +1166,8 @@ main {
   }
 
   .tonic-1-html {
+    margin-top: 3vh;
+    margin-left: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1073,6 +1185,7 @@ main {
   }
 
   .tonic-1-css {
+    margin-top: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1091,6 +1204,7 @@ main {
   }
 
   .tonic-1-javaScript {
+    margin-top: 3vh;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -1120,7 +1234,8 @@ main {
     background: #fff;
     color: #396df2;
     letter-spacing: 0.03em;
-    margin-top: 8px;
+    margin-top: 4vh;
+    margin-left: 3vh;
   }
 
   .Button-SeeProject:hover {
@@ -1139,7 +1254,7 @@ main {
 
   .artical-2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: self-start;
     flex-direction: row;
     width: 80%;
@@ -1164,6 +1279,14 @@ main {
   .Multi-post a {
     text-decoration: none;
     color: #172b4d;
+  }
+
+  .Multi-post a h1 {
+    margin-top: 2.5vh;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-left: 3vh;
   }
 
   .Canopy-2 a {
@@ -1194,11 +1317,13 @@ main {
   }
 
   .Multi-description {
+    margin-left: 3vh;
     color: #344563;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 24px;
+    margin-top: 3vh;
   }
 
   /* artical-3 */
@@ -1332,40 +1457,39 @@ main {
   /* about myself section 3 */
 
   .section-3 {
+    width: calc(100% - 20%);
+    height: calc(100vh - 20%);
+    border-radius: 0 150px 0 0;
+    background-color: white;
     display: flex;
-    justify-content: start;
-    flex-direction: row;
-    width: 100%;
-    height: 80vh;
-    position: relative;
-    background-color: #fff;
-    border-top-right-radius: 70px;
-    margin-top: 15vh;
-    z-index: -1;
+    padding: 10%;
+    justify-content: space-between;
+    margin-top: 16vh;
   }
 
   .heading-2 {
     margin-left: 7%;
   }
 
-  .About-myself {
+  .About-left {
+    width: 40%;
+  }
+
+  .about-br {
     display: flex;
-    align-items: center;
-    width: 94%;
-    height: 150px;
+  }
+
+  .About-myself {
+    margin-top: 14vh;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;
+    line-height: 45px;
     color: #172b4d;
-    margin-top: 11vh;
   }
 
   .second-heading-description {
-    display: flex;
-    width: 90%;
-    font-size: 16px;
-    color: #344563;
+    margin: 20px 0;
   }
 
   .Let-connect {
@@ -1432,18 +1556,22 @@ main {
     background-color: blue;
   }
 
+  .about-right {
+    width: 50%;
+  }
+
   .languages-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 303px;
+    width: 100%;
   }
 
   .Languages {
-    font-weight: 300;
-    font-size: 16px;
-    margin-left: 8%;
-    margin-top: 14vh;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 16vh;
   }
 
   .arrow-language {
@@ -1452,25 +1580,47 @@ main {
     font-size: 25px;
     width: 12px;
     transform: rotate(90deg);
-    margin-right: -34%;
     margin-top: 13vh;
   }
 
   .div-JS {
     display: flex;
     flex-direction: column;
-    align-items: top;
-    width: 13vh;
-    height: 13vh;
+    width: 80px;
+    height: 80px;
     background: #f7f7f9;
-    border-radius: 8px;
-    margin-left: 7%;
-    margin-top: 2vh;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 4vh;
+    padding: 12px;
+  }
+
+  .div-HTML {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    background: #f7f7f9;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 4vh;
+    padding: 12px;
+  }
+
+  .div-CSS {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 80px;
+    background: #f7f7f9;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 4vh;
+    padding: 12px;
   }
 
   .language-icons-container {
     display: flex;
-    margin-right: 20vh;
   }
 
   .icons-languages-div {
@@ -1478,17 +1628,17 @@ main {
   }
 
   .languages-icons {
-    margin-left: 10%;
-    margin-top: 1vh;
-    height: 5vh;
+    width: 48px;
+    height: 48px;
   }
 
   .span-JS {
-    margin-top: 1vh;
-    margin-left: 10%;
-    font-size: 10px;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5vh;
     color: #253858;
+    font-weight: 500;
+    font-size: 15px;
     line-height: 20px;
   }
 
@@ -1496,8 +1646,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    height: 6vh;
+    width: 100%;
+    height: 9vh;
     padding-bottom: 1vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.242);
     margin-left: 1%;
@@ -1505,7 +1655,7 @@ main {
 
   .Frameworks {
     margin-top: 2vh;
-    margin-left: 7%;
+    margin-left: 2%;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -1524,12 +1674,21 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    height: 6vh;
+    width: 100%;
+    height: 9vh;
     padding-bottom: 1vh;
     border-bottom: 1px solid rgba(0, 0, 0, 0.242);
     margin-left: 1%;
     margin-bottom: 5vh;
+  }
+
+  .Skills {
+    margin-top: 2vh;
+    margin-left: 2%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
   }
 
   .Arrow-skills {
@@ -1538,15 +1697,6 @@ main {
     font-size: 25px;
     margin-bottom: 20px;
     margin-right: 10px;
-  }
-
-  .Skills {
-    margin-top: 2vh;
-    margin-left: 7%;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000;
   }
 
   .Contact_form_container {
@@ -1564,12 +1714,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 100vh;
     position: relative;
     flex-direction: column;
     padding: 103px 24px 8px;
     background-color: #6070ff;
-    border-top-left-radius: 70px;
+    border-radius: 150px 0 0 0;
     background-position: right;
     background-repeat: no-repeat;
   }
@@ -1593,37 +1743,16 @@ main {
     margin-top: -11vh;
   }
 
-  .img-1 {
+  .div-BG {
+    width: 80%;
+    height: 80%;
     position: absolute;
-    right: 0;
-    margin-top: 7.5vh;
-  }
-
-  .img-2 {
-    position: absolute;
-    right: 0;
-    margin-top: 2.9vh;
-  }
-
-  .img-3 {
-    position: absolute;
-    left: 40%;
-    height: 3.5vh;
-    margin-top: 10vh;
-  }
-
-  .img-4 {
-    position: absolute;
-    right: 49px;
-    bottom: -2.2vh;
-    width: 9vh;
-  }
-
-  .img-5 {
-    position: absolute;
-    right: 92px;
-    bottom: -2.5vh;
-    height: 4vh;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url("contact\ form\ background\ shapes.svg");
+    z-index: 2;
+    margin-left: 10%;
+    margin-top: 10%;
   }
 
   .form_heading {
@@ -1637,6 +1766,7 @@ main {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
+    z-index: 2;
     color: #fff;
   }
 
@@ -1644,45 +1774,54 @@ main {
     color: #ebebff;
     font-size: 20px;
     font-weight: 400;
-    margin-top: 12px;
+    width: 600px;
     text-align: center;
+    margin: 10px 0;
   }
 
-  .form {
+  form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    z-index: 2;
   }
 
   .user_name {
-    margin-top: 47px;
-    border-radius: 8px;
-    padding: 15px 38px 15px 16px;
-    border: none;
+    border-radius: 5px;
     font-size: 17px;
     font-weight: 400;
-    width: 100%;
+    width: 500px;
+    border: 1px solid #cfd8dc;
+    margin: 10px 0;
+    outline: none;
+    padding: 10px;
+    background-color: #fff;
   }
 
   .user_email {
-    margin-top: 20px;
-    padding: 15px 38px 15px 16px;
-    border-radius: 8px;
-    border: none;
+    border-radius: 5px;
     font-size: 17px;
     font-weight: 400;
-    width: 100%;
+    width: 500px;
+    border: 1px solid #cfd8dc;
+    margin: 10px 0;
+    outline: none;
+    padding: 10px;
+    background-color: #fff;
   }
 
   .massage {
-    margin-top: 18px;
+    margin: 10px 0;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    padding: 15px 38px 15px 16px;
     color: #b3bac5;
-    border-radius: 8px;
-    border: none;
-    width: 100%;
+    border-radius: 5px;
+    width: 500px;
+    border: 1px solid #cfd8dc;
+    outline: none;
+    padding: 10px;
+    background-color: #fff;
   }
 
   .get_in_touch {
