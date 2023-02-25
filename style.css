@@ -51,6 +51,10 @@ main {
     display: none;
   }
 
+  .header-mobile {
+    background-color: white;
+  }
+
   header div a {
     color: #6070ff;
     list-style: none;
@@ -72,12 +76,21 @@ main {
   }
 
   .background-img {
-    border-bottom-left-radius: 70px;
     position: absolute;
+    height: 90vh;
+    margin-top: 10vh;
     width: 100%;
-    height: 100%;
+    background-image: url("header-shapes\ mobile.png");
+    background-position: center;
+    background-size: 100% 100%;
     z-index: -1;
-    background: #fff;
+    background-color: white;
+  }
+
+  .BG-img {
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
   }
 
   .heading-1 {
@@ -160,6 +173,12 @@ main {
     gap: 12px;
     position: relative;
     margin-top: 15vh;
+  }
+
+  .idcard:hover {
+    transition: 0.5s;
+    scale: 1.05;
+    cursor: pointer;
   }
 
   .portfolio-idcard {
@@ -285,12 +304,16 @@ main {
     color: #396df2;
     letter-spacing: 0.03em;
     margin-top: 12px;
+    cursor: pointer;
+    transition: 0.3s;
   }
 
   .Button-SeeProject:hover {
     border: 1px solid rgb(14, 14, 223);
     background-color: rgba(26, 59, 208, 0.929);
     color: white;
+    scale: 1.09;
+    word-spacing: 1.5px;
   }
 
   .Button-SeeProject:active {
@@ -616,7 +639,7 @@ main {
 
   .Languages {
     font-size: 20px;
-    margin-left: 8%;
+    margin-left: 14%;
   }
 
   .arrow-language {
@@ -845,12 +868,15 @@ main {
     border: none;
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
   }
 
   .get_in_touch:hover {
     border: 1px solid rgb(14, 14, 223);
     background-color: rgba(26, 59, 208, 0.929);
     color: white;
+    scale: 1.09;
+    word-spacing: 1.5px;
   }
 
   .get_in_touch:active {
@@ -898,6 +924,30 @@ main {
     margin-left: 7vh;
   }
 
+  .My-logo-h1 {
+    animation: animation1 1s;
+  }
+
+  @keyframes animation1 {
+    0% {
+      transform: rotateY(0deg);
+    }
+
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  .Tonic-1 a h1 {
+    margin-top: 2.5vh;
+    margin-left: 3vh;
+  }
+
+  header div a h1:hover {
+    transition: 0.3s ease-in-out;
+    scale: 1.25;
+  }
+
   .header-BG {
     position: absolute;
     height: 90%;
@@ -933,16 +983,31 @@ main {
     margin-right: 4vh;
     font-weight: 500;
     font-size: 15px;
+    transition: 0.3s;
   }
 
   .menuItem2 {
     cursor: pointer;
     margin-right: 4vh;
+    transition: 0.3s;
   }
 
   .menuItem3 {
     cursor: pointer;
     margin-right: 6vh;
+    transition: 0.3s;
+  }
+
+  .Menu .menuItem1:hover {
+    scale: 1.25;
+  }
+
+  .Menu .menuItem2:hover {
+    scale: 1.25;
+  }
+
+  .Menu .menuItem3:hover {
+    scale: 1.25;
   }
 
   .a {
@@ -1033,12 +1098,14 @@ main {
     color: #7f8cff;
     width: 94%;
     margin-top: 2vh;
+    z-index: 1;
   }
 
   .icons-div {
     width: 60%;
     display: flex;
     margin: 10px 0;
+    z-index: 1;
   }
 
   .socialLink {
@@ -1097,6 +1164,12 @@ main {
     width: 100%;
   }
 
+  .idcard-1-img:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    scale: 1.05;
+  }
+
   .div-2 {
     height: 100%;
   }
@@ -1107,11 +1180,6 @@ main {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-  }
-
-  .Tonic-1 a h1 {
-    margin-top: 2.5vh;
-    margin-left: 3vh;
   }
 
   .Canopy-1 {
@@ -1148,6 +1216,10 @@ main {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .Multi-description {
+    margin-left: 3vh;
   }
 
   .Tonic-1-description {
@@ -1236,12 +1308,16 @@ main {
     letter-spacing: 0.03em;
     margin-top: 4vh;
     margin-left: 3vh;
+    cursor: pointer;
+    transition: 0.3s;
   }
 
   .Button-SeeProject:hover {
     border: 1px solid rgb(14, 14, 223);
     background-color: rgba(26, 59, 208, 0.929);
     color: white;
+    scale: 1.09;
+    word-spacing: 1.5px;
   }
 
   .Button-SeeProject:active {
@@ -1267,6 +1343,15 @@ main {
     margin-top: 15vh;
   }
 
+  .multi-post-heading {
+    margin-left: 3vh;
+  }
+
+  .Multi-post a {
+    color: #172b4d;
+    text-decoration: none;
+  }
+
   .portfolio-idcard-2 {
     width: 100%;
     list-style-type: none;
@@ -1274,184 +1359,6 @@ main {
 
   .idcard-2-img {
     width: 100%;
-  }
-
-  .Multi-post a {
-    text-decoration: none;
-    color: #172b4d;
-  }
-
-  .Multi-post a h1 {
-    margin-top: 2.5vh;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    margin-left: 3vh;
-  }
-
-  .Canopy-2 a {
-    text-decoration: none;
-    color: #344563;
-  }
-
-  .Canopy-2 {
-    display: flex;
-    flex-direction: row;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    margin-top: 2vh;
-  }
-
-  .Type2015-2 {
-    margin-left: 6vh;
-  }
-
-  .back-end-dev-2 {
-    display: flex;
-    margin-left: 3vh;
-    opacity: 90%;
-    color: #7a869a;
-    font-size: 13px;
-    list-style-type: disc;
-  }
-
-  .Multi-description {
-    margin-left: 3vh;
-    color: #344563;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 3vh;
-  }
-
-  /* artical-3 */
-
-  .artical-3 {
-    display: flex;
-    justify-content: center;
-    align-items: self-start;
-    flex-direction: row;
-    width: 80%;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    background: #fff;
-    padding: 16px;
-    gap: 12px;
-    position: relative;
-    margin-top: 15vh;
-  }
-
-  .portfolio-idcard-3 {
-    list-style-type: none;
-    margin-left: -3px;
-    margin-top: -3vh;
-  }
-
-  .Tonic-2 a {
-    text-decoration: none;
-    color: #172b4d;
-  }
-
-  .Canopy-3 a {
-    text-decoration: none;
-    color: #344563;
-  }
-
-  .Canopy-3 {
-    display: flex;
-    flex-direction: row;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    color: #7a869a;
-    margin-top: 2vh;
-  }
-
-  .Type2015-3 {
-    margin-left: 6vh;
-  }
-
-  .back-end-dev-3 {
-    display: flex;
-    margin-left: 5vh;
-    opacity: 90%;
-    color: #7a869a;
-    font-size: 13px;
-    list-style-type: disc;
-  }
-
-  .Tonic-1-description-2 {
-    color: #344563;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  /* artical-4 */
-
-  .artical-4 {
-    display: flex;
-    justify-content: center;
-    align-items: self-start;
-    flex-direction: row;
-    width: 80%;
-    border: 1px solid #dfe1e6;
-    border-radius: 16px;
-    background: #fff;
-    padding: 16px;
-    gap: 12px;
-    position: relative;
-    margin-top: 15vh;
-  }
-
-  .portfolio-idcard-4 {
-    list-style-type: none;
-    margin-left: -2px;
-    margin-top: -20px;
-  }
-
-  .Multi-post-2 a {
-    text-decoration: none;
-    color: #172b4d;
-  }
-
-  .Canopy-4 a {
-    text-decoration: none;
-    color: #344563;
-  }
-
-  .Canopy-4 {
-    display: flex;
-    flex-direction: row;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    color: #7a869a;
-    margin-top: 2vh;
-  }
-
-  .Type2015-4 {
-    margin-left: 6vh;
-  }
-
-  .back-end-dev-4 {
-    display: flex;
-    margin-left: 5vh;
-    opacity: 90%;
-    color: #7a869a;
-    font-size: 13px;
-    list-style-type: disc;
-  }
-
-  .Multi-2-description {
-    color: #344563;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
   }
 
   /* about myself section 3 */
@@ -1542,12 +1449,16 @@ main {
     line-height: 24px;
     margin-left: 7%;
     margin-top: 5vh;
+    transition: 0.3s;
+    cursor: pointer;
   }
 
   .get-my-resume:hover {
     border: 1px solid rgb(14, 14, 223);
     background-color: rgba(26, 59, 208, 0.929);
     color: white;
+    scale: 1.09;
+    word-spacing: 1.5px;
   }
 
   .get-my-resume:active {
@@ -1798,6 +1709,11 @@ main {
     background-color: #fff;
   }
 
+  .user_name:hover {
+    transform: translate(38px, 15px);
+    transition: 0.3s ease-in-out;
+  }
+
   .user_email {
     border-radius: 5px;
     font-size: 17px;
@@ -1808,6 +1724,11 @@ main {
     outline: none;
     padding: 10px;
     background-color: #fff;
+  }
+
+  .user_email:hover {
+    transform: translate(38px, 15px);
+    transition: 0.3s ease-in-out;
   }
 
   .massage {
@@ -1824,6 +1745,11 @@ main {
     background-color: #fff;
   }
 
+  .massage:hover {
+    transform: translate(38px, 15px);
+    transition: 0.3s ease-in-out;
+  }
+
   .get_in_touch {
     display: flex;
     justify-content: center;
@@ -1837,12 +1763,16 @@ main {
     border: none;
     font-size: 17px;
     font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
   }
 
   .get_in_touch:hover {
     border: 1px solid rgb(14, 14, 223);
     background-color: rgba(26, 59, 208, 0.929);
     color: white;
+    scale: 1.09;
+    word-spacing: 1.5px;
   }
 
   .get_in_touch:active {
