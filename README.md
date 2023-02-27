@@ -9,6 +9,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Deployment](#triangular_flag_on_post-deployment)
   - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -64,6 +65,14 @@ Clone this repository to your desired folder:
 ### Usage
 
 To run the project, open index.html with your preferred web browser or open it with a live server from your code editor
+
+### Deployment
+
+You can deploy this project using:
+
+Get a hosting website and give all of the github files
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Author <a name="author"></a>
 
