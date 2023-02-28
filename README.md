@@ -38,8 +38,6 @@ HTML | CSS
 
 > <a href="https://hasnatali1947.github.io/Portfolio/" >Visit</a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
