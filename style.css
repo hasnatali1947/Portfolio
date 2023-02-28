@@ -935,12 +935,10 @@ main {
 
   @keyframes animation1 {
     0% {
-      transform: translateY(0%);
       transform: rotateY(0deg);
     }
 
     100% {
-      transform: translateY(-50%);
       transform: rotateY(360deg);
     }
   }
