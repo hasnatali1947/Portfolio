@@ -116,6 +116,11 @@ main {
     margin-top: 11vh;
   }
 
+  .exclimationMark {
+    font-size: 40px;
+    animation: exclimationMark 2s infinite ease-in-out;
+  }
+
   .First-heading-description {
     display: flex;
     margin: 3%;
@@ -925,15 +930,17 @@ main {
   }
 
   .My-logo-h1 {
-    animation: animation1 1s;
+    animation: animation1 2s;
   }
 
   @keyframes animation1 {
     0% {
+      transform: translateY(0%);
       transform: rotateY(0deg);
     }
 
     100% {
+      transform: translateY(-50%);
       transform: rotateY(360deg);
     }
   }
@@ -1026,9 +1033,9 @@ main {
     height: 100%;
   }
 
-  br {
+  /* br {
     display: none;
-  }
+  } */
 
   .section-1 {
     width: 100%;
@@ -1067,25 +1074,29 @@ main {
 
   .First-heading {
     display: flex;
-    align-items: center;
-    margin: 3%;
-    width: 94%;
-    height: 150px;
-    font-style: normal;
+    justify-content: space-between;
+    width: 60%;
     font-weight: 700;
     font-size: 48px;
-    line-height: 52px;
     color: #172b4d;
-    margin-top: -3vh;
-    white-space: pre;
-    margin-left: -12vh;
+    margin-top: -18vh;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .you {
+    display: none;
+  }
+
+  .First-heading:hover {
+    letter-spacing: 0.5px;
+    cursor: default;
   }
 
   .First-heading-description {
     display: flex;
     width: 80%;
     font-size: 20px;
-    margin-top: -20px;
     color: #344563;
   }
 
