@@ -55,19 +55,18 @@ main {
     background-color: white;
   }
 
-  header div a {
-    color: #6070ff;
-    list-style: none;
-    text-decoration: none;
-    font-size: 8px;
-  }
-
   header nav {
     margin-right: 5%;
   }
 
-  .My-logo {
-    animation: animation1 2s;
+  .My-logo2 {
+    color: #6070ff;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    animation: animation1 2s ease-in-out;
+    position: absolute;
   }
 
   @keyframes animation1 {
@@ -948,19 +947,16 @@ main {
     margin-left: 5%;
   }
 
-  header div a {
+  .My-logo-h1 {
+    transition: 0.3s ease-in-out;
+    scale: 1.25;
     color: #6070ff;
     list-style: none;
     text-decoration: none;
-    font-size: 8px;
-  }
-
-  header div a h1 {
-    color: #6070ff;
+    font-size: 18px;
+    font-weight: 700;
     margin-left: 7vh;
-  }
-
-  .My-logo-h1 {
+    position: absolute;
     animation: animation1 2s;
   }
 
@@ -981,11 +977,6 @@ main {
   .Tonic-1 a h1 {
     margin-top: 2.5vh;
     margin-left: 3vh;
-  }
-
-  header div a h1:hover {
-    transition: 0.3s ease-in-out;
-    scale: 1.25;
   }
 
   .header-BG {
@@ -1123,6 +1114,7 @@ main {
   }
 
   .exclimationMark {
+    z-index: 30;
     font-size: 48px;
     font-weight: 700;
     animation: exclimationMark 2s infinite ease-in-out;
