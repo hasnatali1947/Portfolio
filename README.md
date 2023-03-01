@@ -101,6 +101,23 @@ Get a hosting website and give all of the github files
 - Twitter: [@hasnatking1947](https://twitter.com/hasnatking1947)
 - LinkedIn: [Hasnat ali](https://www.linkedin.com/feed/?trk=homepage-basic_google-sign-in-submit)
 
+👤 Aimable BANCUNGUYE
+
+-Github: [@githubhandle](https://github.com/BANCUNGUYE66)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Adding work popups
+> Adding functionality to about section
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
 ## 🤝 Contributing <a name="contributing"></a>
 
 Feel free to check [issues page](https://github.com/hasnatali1947/Portfolio/issues).
