@@ -121,7 +121,6 @@ main {
   }
 
   .First-heading {
-    /* display: flex; */
     align-items: center;
     margin: 3%;
     width: 94%;
@@ -141,7 +140,7 @@ main {
 
   @keyframes exclimationMark {
     0% {
-      color: black;
+      color: #172b4d;
     }
 
     50% {
@@ -149,7 +148,7 @@ main {
     }
 
     100% {
-      color: #000;
+      color: #172b4d;
     }
   }
 
@@ -1124,14 +1123,14 @@ main {
   }
 
   .exclimationMark {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 700;
     animation: exclimationMark 2s infinite ease-in-out;
   }
 
   @keyframes exclimationMark {
     0% {
-      color: black;
+      color: #172b4d;
     }
 
     50% {
@@ -1139,7 +1138,7 @@ main {
     }
 
     100% {
-      color: #000;
+      color: #172b4d;
     }
   }
 
