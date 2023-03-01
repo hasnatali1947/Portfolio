@@ -3,6 +3,7 @@
 - [📗 Table of Contents](#-table-of-contents)
   - [🛠️ Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
+    - [Key Features ](key Features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
