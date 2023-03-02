@@ -1187,7 +1187,7 @@ main {
 
   .artical-1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: self-start;
     flex-direction: row;
     width: 80%;
@@ -1375,7 +1375,7 @@ main {
 
   .artical-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: self-start;
     flex-direction: row;
     width: 80%;
