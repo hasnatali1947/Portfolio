@@ -1099,10 +1099,11 @@ main {
     margin-top: -18vh;
     color: #172b4d;
     width: 70%;
+    z-index: 2;
   }
 
   .First-heading:hover {
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
     cursor: default;
   }
 
