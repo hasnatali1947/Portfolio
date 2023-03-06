@@ -55,15 +55,32 @@ main {
     background-color: white;
   }
 
-  header div a {
+  header nav {
+    margin-right: 5%;
+  }
+
+  .My-logo2 {
     color: #6070ff;
     list-style: none;
     text-decoration: none;
-    font-size: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    animation: animation1 2s ease-in-out;
+    position: absolute;
   }
 
-  header nav {
-    margin-right: 5%;
+  @keyframes animation1 {
+    0% {
+      transform: rotate(0deg) translate(180px);
+    }
+
+    50% {
+      transform: rotate(10deg) translate(-20px);
+    }
+
+    100% {
+      transform: rotate(0deg) translateX(0);
+    }
   }
 
   .section-1 {
@@ -103,7 +120,6 @@ main {
   }
 
   .First-heading {
-    display: flex;
     align-items: center;
     margin: 3%;
     width: 94%;
@@ -114,6 +130,25 @@ main {
     line-height: 52px;
     color: #172b4d;
     margin-top: 11vh;
+  }
+
+  .exclimationMark {
+    font-size: 40px;
+    animation: exclimationMark 2s infinite ease-in-out;
+  }
+
+  @keyframes exclimationMark {
+    0% {
+      color: #172b4d;
+    }
+
+    50% {
+      color: white;
+    }
+
+    100% {
+      color: #172b4d;
+    }
   }
 
   .First-heading-description {
@@ -912,40 +947,36 @@ main {
     margin-left: 5%;
   }
 
-  header div a {
+  .My-logo-h1 {
+    transition: 0.3s ease-in-out;
+    scale: 1.25;
     color: #6070ff;
     list-style: none;
     text-decoration: none;
-    font-size: 8px;
-  }
-
-  header div a h1 {
-    color: #6070ff;
+    font-size: 18px;
+    font-weight: 700;
     margin-left: 7vh;
-  }
-
-  .My-logo-h1 {
-    animation: animation1 1s;
+    position: absolute;
+    animation: animation1 2s;
   }
 
   @keyframes animation1 {
     0% {
-      transform: rotateY(0deg);
+      transform: rotate(0deg) translate(180px);
+    }
+
+    50% {
+      transform: rotate(10deg) translate(-20px);
     }
 
     100% {
-      transform: rotateY(360deg);
+      transform: rotate(0deg) translateX(0);
     }
   }
 
   .Tonic-1 a h1 {
     margin-top: 2.5vh;
     margin-left: 3vh;
-  }
-
-  header div a h1:hover {
-    transition: 0.3s ease-in-out;
-    scale: 1.25;
   }
 
   .header-BG {
@@ -1026,10 +1057,6 @@ main {
     height: 100%;
   }
 
-  br {
-    display: none;
-  }
-
   .section-1 {
     width: 100%;
     height: 100vh;
@@ -1066,27 +1093,46 @@ main {
   }
 
   .First-heading {
-    display: flex;
-    align-items: center;
-    margin: 3%;
-    width: 94%;
-    height: 150px;
-    font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 52px;
+    transition: 0.3s ease-in-out;
+    margin-top: -18vh;
     color: #172b4d;
-    margin-top: -3vh;
-    white-space: pre;
-    margin-left: -12vh;
+    width: 70%;
+    z-index: 2;
+  }
+
+  .First-heading:hover {
+    letter-spacing: 0.7px;
+    cursor: default;
   }
 
   .First-heading-description {
     display: flex;
     width: 80%;
     font-size: 20px;
-    margin-top: -20px;
     color: #344563;
+  }
+
+  .exclimationMark {
+    z-index: 30;
+    font-size: 48px;
+    font-weight: 700;
+    animation: exclimationMark 2s infinite ease-in-out;
+  }
+
+  @keyframes exclimationMark {
+    0% {
+      color: #172b4d;
+    }
+
+    50% {
+      color: white;
+    }
+
+    100% {
+      color: #172b4d;
+    }
   }
 
   .Connect-heading {
@@ -1142,7 +1188,7 @@ main {
 
   .artical-1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: self-start;
     flex-direction: row;
     width: 80%;
@@ -1330,7 +1376,7 @@ main {
 
   .artical-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: self-start;
     flex-direction: row;
     width: 80%;
