@@ -83,6 +83,10 @@ main {
     }
   }
 
+  #menu-child{
+    display: none;
+  }
+
   .section-1 {
     display: flex;
     justify-content: start;
