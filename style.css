@@ -54,6 +54,11 @@ main {
   .header-mobile {
     background-color: white;
     position: relative;
+    justify-content: space-between;
+  }
+
+  .openMenu{
+    margin-top: 4.8vh;
   }
 
   header nav {
@@ -119,8 +124,8 @@ main {
 
   #cancel-icon {
     position: absolute !important;
-    top: 10%;
-    right: 10%;
+    top: 5%;
+    right: 5%;
     z-index: 20;
   }
 
