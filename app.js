@@ -2,9 +2,9 @@ const menuLinks = document.getElementById('menuChild');
 const hamburger = document.getElementById('menuIcon');
 const maincontent = document.getElementById('mobmain');
 const logo = document.getElementById('logo');
-const navlinks = document.querySelectorAll('.a');
 const openMenu = document.querySelector('.openMenu');
 const closeMenu = document.querySelector('.closeMenu');
+const navlinks = document.querySelectorAll('.a');
 
 openMenu.addEventListener('click', (() => {
   menuLinks.style.display = 'flex';

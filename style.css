@@ -1124,6 +1124,153 @@ main {
     background-color: white;
   }
 
+  .modal {
+    border: 2px solid red;
+    width: 70%;
+    padding: 24px 104px;
+  }
+
+  .back-end-dev-modal {
+    display: flex;
+    margin-left: 3vh;
+    opacity: 90%;
+    color: #7a869a;
+    list-style-type: disc;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .back-modal {
+    margin-left: 8vh;
+    margin-top: -2.5vh;
+  }
+
+  .Type2015-modal {
+    margin-left: 5vh;
+    margin-top: -2.5vh;
+  }
+
+  .idcard-modal {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .lorem {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    border: 2px solid;
+    width: 70%;
+  }
+
+  .modal-tonic a {
+    text-decoration: none;
+    color: #091e42;
+  }
+
+  .modal-tonic a h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .modal-canopy a {
+    text-decoration: none;
+    color: #091e42;
+  }
+
+  .modal-canopy {
+    flex-direction: row;
+  }
+
+  .lorem-button-div {
+    display: flex;
+    border: 2px solid;
+    margin-top: -5vh;
+  }
+
+  .language-button-modal {
+    display: flex;
+    margin-top: -2.2vh;
+  }
+
+  .modal-html {
+    margin-top: 3vh;
+    margin-left: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 35px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal-css {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 30px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 1vh;
+  }
+
+  .modal-javaScript {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 68px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 1vh;
+  }
+
+  .SeeLive-button {
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    height: 3.5vh;
+    width: 12vh;
+  }
+
+  .SeeSource-button {
+    background: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    height: 3.5vh;
+    width: 16vh;
+  }
+
   .desktop-menu {
     margin-top: 10vh;
   }
