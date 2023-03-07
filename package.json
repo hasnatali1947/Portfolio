@@ -29,6 +29,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
-    "i": "^0.3.7"
+    "i": "^0.3.7",
+    "regenerator-runtime": "^0.13.11"
   }
 }

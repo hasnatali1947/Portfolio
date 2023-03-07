@@ -2,7 +2,7 @@ const menuLinks = document.getElementById('menuChild');
 const hamburger = document.getElementById('menuIcon');
 const maincontent = document.getElementById('mobmain');
 const logo = document.getElementById('logo');
-const navlinks = document.getElementsByClassName('a') 
+const navlinks = document.querySelectorAll('.a');
 const openMenu = document.querySelector('.openMenu');
 const closeMenu = document.querySelector('.closeMenu');
 
@@ -22,14 +22,13 @@ closeMenu.addEventListener('click', (() => {
   logo.classList.remove('blur');
 }));
 
-for (let navLink of navlinks) {
-  console.log(navLink)
-  navLink.addEventListener('click', () => {
+for (let i = 0; i < navlinks.length; i += 1) {
+  navlinks[i].addEventListener('click', (e) => {
     maincontent.classList.remove('blur');
     logo.classList.remove('blur');
     menuLinks.style.display = 'none';
     menuLinks.style.visibility = 'hidden';
     hamburger.classList.remove('blur');
     hamburger.style.display = 'flex';
-  })
+  });
 }
