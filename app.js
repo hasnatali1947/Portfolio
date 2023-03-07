@@ -23,7 +23,7 @@ closeMenu.addEventListener('click', (() => {
 }));
 
 for (let i = 0; i < navlinks.length; i += 1) {
-  navlinks[i].addEventListener('click', (e) => {
+  navlinks[i].addEventListener('click', () => {
     maincontent.classList.remove('blur');
     logo.classList.remove('blur');
     menuLinks.style.display = 'none';
