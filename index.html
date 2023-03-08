@@ -9,6 +9,54 @@
   </head>
 
   <body>
+
+    <!-- //////////////modal//////////////////// -->
+
+    <article class="modal" id="modal">
+      <div class="modal-container">
+          <div class="modal-tonic-container" >
+              <h2 class="modal-tonic" ></h2>
+              <button type="button" class="cross" onclick="disappearButton()" >
+              x
+              </button>
+          </div>
+          <div class="modal-canopy">
+            <ul class="back-end-dev-modal">
+              <span class="canopyModal" >CANOPY</span>
+              <li class="back-modal">Back End Dev</li>
+              <li class="Type2015-modal">2015</li>
+            </ul>
+          </div>
+        <div>
+          <ul class="portfolio-idcard">
+            <li>
+              <img class="idcard-modal" src="Snapshoot Portfolio.png" alt="card 1" />
+            </li>
+          </ul>
+        </div>
+        <div class="lorem-button-div">
+
+          <p class="lorem">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+
+          <div class="language-buttons-div">  
+            <div class="language-button-modal">
+              <div class="modal-html">html</div>
+              <div class="modal-css">css</div>
+              <div class="modal-javaScript">javaScript</div>
+            </div>
+            <div class="buttons-div">
+              <button type="button" class="SeeLive-button">See Live <img class="live-button-icon" src="Icon.png" alt=""> </button>
+              <button type="button" class="SeeSource-button">See Source <img class="source-button-icon" src="githubOnIcon.svg" alt="" srcset=""></button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </article>
+
     <header class="header-mobile">
       <div class="My-Logo">
         <a href="#" class="My-logo2" id="logo">
@@ -87,7 +135,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard">
               <li>
-                <img class="idcard-1-img idcard" src="Portfolio (1).png" alt="card 1" />
+                <img class="idcard-1-img idcard" src="Snapshoot Portfolio.png" alt="card 1" />
               </li>
             </ul>
           </div>
@@ -118,7 +166,7 @@
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
 
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="SeeProject()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
 
@@ -128,7 +176,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard-2">
               <li>
-                <img class="idcard-2-img idcard" src="Portfolio (2).png" alt="card 2" />
+                <img class="idcard-2-img idcard" src="desktop-2.png" alt="card 2" />
               </li>
             </ul>
           </div>
@@ -160,7 +208,7 @@
               <div class="tonic-1-css">css</div>
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="Seeproject2()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
 
@@ -170,7 +218,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard">
               <li>
-                <img class="idcard-3-img idcard" src="Portfolio.png" alt="card 3" />
+                <img class="idcard-3-img idcard" src="desktop-3.png" alt="card 3" />
               </li>
             </ul>
           </div>
@@ -201,7 +249,7 @@
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
 
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="Seeproject3()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
 
@@ -211,7 +259,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard">
               <li>
-                <img class="idcard-4-img idcard" src="Portfolio (3).png" alt="card 4" />
+                <img class="idcard-4-img idcard" src="desktop-4.png" alt="card 4" />
               </li>
             </ul>
           </div>
@@ -244,7 +292,7 @@
               <div class="tonic-1-css">css</div>
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="Seeproject4()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
       </section>
@@ -458,56 +506,55 @@
         </ul>
       </nav>
     </header>
-
-    <main class="desktop-menu">
-      <section class="section-1">
-        <div class="header-BG"></div>
-        <div class="heading-1">
-        <h1 class="First-heading">
-          I'm Hasnat <br class="br" />
-          Glad to see you 
-          <span class="exclimationMark">!</span>
-        </h1>
-        <p class="First-heading-description">
-          I'm a software developer! I can help you build a prduct,feature or
-          website Look through some of my work and experience! if you like
-          what you see and have a project you need coded, don't hesitate to
-          contact me.
-        </p>
-        <h3 class="Connect-heading">LET'S CONNECT</h3>
-        
-        <div class="icons-div">
-          
-        <ul class="socialLink">
-          <li>
-          <a href="https://twitter.com/home?lang=en"
-            ><img class="twitter" src="Vector (8).svg" alt="twitter"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/feed/"
-          ><img class="linkedin icons" src="Linkedin icon (1).svg" alt="linkedin"
-          /></a>
-        </li>
-        <li>
-          <a href="https://medium.com/log-in"
-            ><img class="medium icons" src="Vector (9).svg" alt="medium"
-            /></a>
-        </li>
-        <li>
-          <a href="https://github.com/"
-            ><img class="github icons" src="Vector (11).svg" alt="github"
-          /></a>
-        </li>
-        <li>
-          <a href="https://venture.angellist.com/v/login"
-          ><img class="angellist icons" src="Vector (10).svg" alt="angellist"
-          /></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </section>
+    <main class="desktop-menu" id="desktopMenu">
+        <section class="section-1">
+            <div class="header-BG"></div>
+          <div class="heading-1">
+            <h1 class="First-heading">
+              I'm Hasnat <br class="br" />
+              Glad to see you 
+              <span class="exclimationMark">!</span>
+            </h1>
+            <p class="First-heading-description">
+              I'm a software developer! I can help you build a prduct,feature or
+              website Look through some of my work and experience! if you like
+              what you see and have a project you need coded, don't hesitate to
+              contact me.
+            </p>
+            <h3 class="Connect-heading">LET'S CONNECT</h3>
+            
+            <div class="icons-div">
+              
+              <ul class="socialLink">
+                <li>
+                  <a href="https://twitter.com/home?lang=en"
+                    ><img class="twitter" src="Vector (8).svg" alt="twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/feed/"
+                  ><img class="linkedin icons" src="Linkedin icon (1).svg" alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://medium.com/log-in"
+                    ><img class="medium icons" src="Vector (9).svg" alt="medium"
+                    /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/"
+                    ><img class="github icons" src="Vector (11).svg" alt="github"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://venture.angellist.com/v/login"
+                  ><img class="angellist icons" src="Vector (10).svg" alt="angellist"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <!-- artical section 2 -->
 
@@ -547,53 +594,10 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-  
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a" >
+                <button type="button" onclick="SeeProject()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
-          </article>
-
-          <article class="modal">
-            <div>
-              <div class="modal-tonic" >
-                <a href="#">
-                  <h1>Tonic</h1>
-                </a>
-              </div>
-              <div class="modal-canopy">
-                <a href="#"><span>CANOPY</span></a>
-                <ul class="back-end-dev-modal">
-                  <li class="back-modal">Back End Dev</li>
-                  <li class="Type2015-modal">2015</li>
-                </ul>
-              </div>
-            <div>
-              <ul class="portfolio-idcard">
-                <li>
-                  <img class="idcard-modal" src="Snapshoot Portfolio.png" alt="card 1" />
-                </li>
-              </ul>
-            </div>
-            <div class="lorem-button-div">
-
-              <p class="lorem">
-                A daily selection of privately personalized reads; no accounts or
-                sign-ups required.
-              </p>
-  
-              <div class="language-button-modal">
-                <div class="modal-html">html</div>
-                <div class="modal-css">css</div>
-                <div class="modal-javaScript">javaScript</div>
-              </div>
-              <div>
-                <button type="button" class="SeeLive-button">See Live <img src="Icon-Cancel.svg" alt=""> </button>
-                <button type="button" class="SeeSource-button">See Source</button>
-
-              </div>
-
-            </div>
-            
-          </div>
           </article>
 
           <!-- ////////////artical-2//////////////// -->
@@ -627,7 +631,9 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a">
+                <button type="button" onclick="Seeproject2()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
 
               <div class="div-2-artical-2">
@@ -675,8 +681,9 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-  
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a">
+                <button type="button" onclick="Seeproject3()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
           </article>
 
@@ -712,7 +719,9 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a">
+                <button type="button" onclick="Seeproject4()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
 
               <div class="div-2-artical-2">

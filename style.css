@@ -43,6 +43,234 @@ main {
     margin-left: 5%;
   }
 
+  #modal {
+    display: none;
+    position: fixed;
+    margin-top: 2vh;
+    z-index: 100;
+    width: 90%;
+    height: 95vh;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+  }
+
+  .modal-container {
+    display: flex;
+    justify-content: center;
+    justify-content: left;
+    flex-direction: column;
+    width: 85%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px 0 30px 0;
+  }
+
+  .back-end-dev-modal {
+    display: flex;
+    margin-left: 0.5vh;
+    margin-top: 2vh;
+    opacity: 90%;
+    color: #7a869a;
+    list-style-type: disc;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .canopyModal {
+    font-weight: 600;
+    color: #344563;
+  }
+
+  .back-modal {
+    margin-left: 5vh;
+  }
+
+  .Type2015-modal {
+    margin-left: 5vh;
+  }
+
+  .idcard-modal {
+    margin-top: 3vh;
+    height: 100%;
+    width: 100%;
+  }
+
+  .lorem {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    width: 70%;
+  }
+
+  .modal-tonic-container {
+    display: flex;
+    justify-content: space-between;
+    color: #091e42;
+  }
+
+  .modal-tonic {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .modal-canopy a {
+    text-decoration: none;
+    color: #091e42;
+  }
+
+  .lorem-button-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 11vh;
+    height: 15vh;
+  }
+
+  .language-buttons-div {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .language-button-modal {
+    display: flex;
+    margin-top: -2.2vh;
+  }
+
+  .modal-html {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 35px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal-css {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 30px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 1vh;
+  }
+
+  .modal-javaScript {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 68px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 1vh;
+  }
+
+  .buttons-div {
+    border-top: 1px solid #ebecf0;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    margin-top: 3vh;
+  }
+
+  .SeeLive-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #396df2;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    height: 7vh;
+    width: 19vh;
+    padding: 16px;
+    color: #396df2;
+    cursor: pointer;
+  }
+
+  .SeeSource-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #396df2;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    height: 7vh;
+    width: 23vh;
+    color: #396df2;
+    margin-left: 2vh;
+    cursor: pointer;
+    padding: 16px;
+  }
+
+  .live-button-icon {
+    height: 20px;
+    width: 18px;
+  }
+
+  .source-button-icon {
+    height: 20px;
+    width: 18px;
+  }
+
+  .SeeLive-button:hover,
+  .SeeSource-button:hover {
+    background-color: #396df2;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vh;
+    right: 4%;
+    cursor: pointer;
+    z-index: 2;
+    height: 3vh;
+    font-size: x-large;
+    background: none;
+    border: none;
+    color: #67798e;
+  }
+
   .header-desktop {
     display: none;
   }
@@ -1003,6 +1231,235 @@ main {
     margin-left: 5%;
   }
 
+  #modal {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    background: rgba(180, 173, 173, 0.858);
+    border: 1px solid #ebecf0;
+    box-shadow: 1px 2px 3px;
+  }
+
+  .modal-container {
+    display: flex;
+    overflow: scroll;
+    height: 80vh;
+    flex-direction: column;
+    width: 85%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 40px 0 40px 0;
+    padding: 20px;
+  }
+
+  .back-end-dev-modal {
+    display: flex;
+    margin-left: 0.5vh;
+    opacity: 90%;
+    color: #7a869a;
+    list-style-type: disc;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .canopyModal {
+    font-weight: 700;
+    color: #344563;
+  }
+
+  .back-modal {
+    margin-left: 5vh;
+  }
+
+  .Type2015-modal {
+    margin-left: 5vh;
+  }
+
+  .idcard-modal {
+    margin-top: 1vh;
+    height: 100%;
+    width: 100%;
+  }
+
+  .lorem {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    width: 70%;
+  }
+
+  .modal-tonic-container {
+    display: flex;
+    justify-content: space-between;
+    color: #091e42;
+  }
+
+  .modal-tonic {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .modal-canopy a {
+    text-decoration: none;
+    color: #091e42;
+  }
+
+  .lorem-button-div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 2.5vh;
+    height: 15vh;
+  }
+
+  .language-buttons-div {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-left: 6vh;
+  }
+
+  .language-button-modal {
+    display: flex;
+    margin-top: -2.2vh;
+  }
+
+  .modal-html {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 35px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .modal-css {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 30px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 1vh;
+  }
+
+  .modal-javaScript {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    width: 68px;
+    height: 20px;
+    color: #6070ff;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 1vh;
+  }
+
+  .buttons-div {
+    border-top: 1px solid #ebecf0;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    margin-top: 3vh;
+  }
+
+  .SeeLive-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #396df2;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    height: 4.5vh;
+    width: 14vh;
+    color: #396df2;
+    cursor: pointer;
+  }
+
+  .SeeSource-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #396df2;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    height: 4.5vh;
+    width: 17vh;
+    color: #396df2;
+    margin-left: 2vh;
+    cursor: pointer;
+  }
+
+  .live-button-icon {
+    height: 20px;
+    width: 18px;
+  }
+
+  .source-button-icon {
+    height: 20px;
+    width: 18px;
+  }
+
+  .SeeLive-button:hover,
+  .SeeSource-button:hover {
+    background-color: #396df2;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .cross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vh;
+    right: 4%;
+    cursor: pointer;
+    z-index: 2;
+    height: 3vh;
+    font-size: x-large;
+    background: none;
+    border: none;
+    color: #67798e;
+  }
+
+  .blur {
+    filter: blur(15px);
+  }
+
   .My-logo-h1 {
     transition: 0.3s ease-in-out;
     scale: 1.25;
@@ -1122,153 +1579,6 @@ main {
     align-items: center;
     border-radius: 0 0 0 150px;
     background-color: white;
-  }
-
-  .modal {
-    border: 2px solid red;
-    width: 70%;
-    padding: 24px 104px;
-  }
-
-  .back-end-dev-modal {
-    display: flex;
-    margin-left: 3vh;
-    opacity: 90%;
-    color: #7a869a;
-    list-style-type: disc;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .back-modal {
-    margin-left: 8vh;
-    margin-top: -2.5vh;
-  }
-
-  .Type2015-modal {
-    margin-left: 5vh;
-    margin-top: -2.5vh;
-  }
-
-  .idcard-modal {
-    height: 100vh;
-    width: 100%;
-  }
-
-  .lorem {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    color: #344563;
-    border: 2px solid;
-    width: 70%;
-  }
-
-  .modal-tonic a {
-    text-decoration: none;
-    color: #091e42;
-  }
-
-  .modal-tonic a h1 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
-
-  .modal-canopy a {
-    text-decoration: none;
-    color: #091e42;
-  }
-
-  .modal-canopy {
-    flex-direction: row;
-  }
-
-  .lorem-button-div {
-    display: flex;
-    border: 2px solid;
-    margin-top: -5vh;
-  }
-
-  .language-button-modal {
-    display: flex;
-    margin-top: -2.2vh;
-  }
-
-  .modal-html {
-    margin-top: 3vh;
-    margin-left: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 35px;
-    height: 20px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .modal-css {
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 30px;
-    height: 20px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 1vh;
-  }
-
-  .modal-javaScript {
-    margin-top: 3vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 68px;
-    height: 20px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 1vh;
-  }
-
-  .SeeLive-button {
-    background: #fff;
-    border: 1px solid #ebecf0;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 6px;
-    height: 3.5vh;
-    width: 12vh;
-  }
-
-  .SeeSource-button {
-    background: #fff;
-    border: 1px solid #ebecf0;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 6px;
-    height: 3.5vh;
-    width: 16vh;
   }
 
   .desktop-menu {
@@ -1541,6 +1851,10 @@ main {
     font-size: 12px;
     line-height: 16px;
     margin-left: 1vh;
+  }
+
+  .Seeproject-a {
+    text-decoration: none;
   }
 
   .Button-SeeProject {
