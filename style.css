@@ -70,27 +70,32 @@ main {
 
   .back-end-dev-modal {
     display: flex;
-    margin-left: 0.5vh;
-    margin-top: 2vh;
-    opacity: 90%;
-    color: #7a869a;
-    list-style-type: disc;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    flex-direction: row;
+    align-items: center;
   }
 
   .canopyModal {
-    font-weight: 600;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
     color: #344563;
   }
 
   .back-modal {
-    margin-left: 5vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #7a869a;
+    margin-left: 25px;
+    width: 14vh;
   }
 
   .Type2015-modal {
-    margin-left: 5vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #7a869a;
+    margin-left: 30px;
   }
 
   .idcard-modal {
@@ -1233,21 +1238,19 @@ main {
 
   #modal {
     display: none;
-    position: fixed;
     justify-content: center;
     align-items: center;
+    margin-top: 10vh;
     z-index: 200;
     width: 100%;
-    height: 100vh;
     background: rgba(180, 173, 173, 0.858);
     border: 1px solid #ebecf0;
     box-shadow: 1px 2px 3px;
+    border-radius: 10px;
   }
 
   .modal-container {
     display: flex;
-    overflow: scroll;
-    height: 80vh;
     flex-direction: column;
     width: 85%;
     border-radius: 10px;
@@ -1258,7 +1261,7 @@ main {
 
   .back-end-dev-modal {
     display: flex;
-    margin-left: 0.5vh;
+    margin-left: -0.5vh;
     opacity: 90%;
     color: #7a869a;
     list-style-type: disc;
@@ -1309,6 +1312,14 @@ main {
   .modal-canopy a {
     text-decoration: none;
     color: #091e42;
+  }
+
+  .modal-canopy {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #091e42;
+    margin: 10px 0 5px 10px;
   }
 
   .lorem-button-div {
