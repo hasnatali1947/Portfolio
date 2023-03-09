@@ -46,12 +46,12 @@ main {
   #modal {
     display: none;
     position: fixed;
-    margin-top: 2vh;
     z-index: 100;
-    width: 90%;
-    height: 95vh;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
-    background-color: white;
+    align-items: center;
+    background-color: rgba(251, 251, 251, 0.153);
     border: 1px solid #ebecf0;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 16px;
@@ -59,13 +59,13 @@ main {
 
   .modal-container {
     display: flex;
-    justify-content: center;
     justify-content: left;
     flex-direction: column;
     width: 85%;
+    height: 90%;
+    padding: 15px;
     border-radius: 10px;
     background-color: white;
-    margin: 30px 0 30px 0;
   }
 
   .back-end-dev-modal {
@@ -102,6 +102,8 @@ main {
     margin-top: 3vh;
     height: 100%;
     width: 100%;
+    max-width: 330px;
+    min-width: 200px;
   }
 
   .lorem {
@@ -109,7 +111,6 @@ main {
     font-size: 16px;
     line-height: 30px;
     color: #344563;
-    width: 70%;
   }
 
   .modal-tonic-container {
@@ -149,109 +150,48 @@ main {
     margin-top: -2.2vh;
   }
 
-  .modal-html {
+  .language-button {
     margin-top: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 35px;
-    height: 20px;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .modal-css {
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 30px;
-    height: 20px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 1vh;
-  }
-
-  .modal-javaScript {
-    margin-top: 3vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 68px;
-    height: 20px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 1vh;
+    margin-right: 12px;
   }
 
   .buttons-div {
     border-top: 1px solid #ebecf0;
     display: flex;
     align-items: center;
-    height: 10vh;
+    padding-top: 15px;
     margin-top: 3vh;
+    flex-wrap: wrap;
   }
 
-  .SeeLive-button {
+  .SeeLiveSource-button {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background: #fff;
     border: 1px solid #396df2;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 6px;
-    height: 7vh;
-    width: 19vh;
-    padding: 16px;
+    width: max-content;
+    padding: 7px 13px;
+    margin-right: 10px;
     color: #396df2;
     cursor: pointer;
+    margin-bottom: 6px;
   }
 
-  .SeeSource-button {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #fff;
-    border: 1px solid #396df2;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 6px;
-    height: 7vh;
-    width: 23vh;
-    color: #396df2;
-    margin-left: 2vh;
-    cursor: pointer;
-    padding: 16px;
-  }
-
-  .live-button-icon {
+  .button-icon {
     height: 20px;
     width: 18px;
-  }
-
-  .source-button-icon {
-    height: 20px;
-    width: 18px;
+    margin-left: 10px;
   }
 
   .SeeLive-button:hover,
@@ -1236,26 +1176,69 @@ main {
     margin-left: 5%;
   }
 
+  article {
+    width: 80%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.187);
+    height: max-content;
+  }
+
+  article:nth-child(1) {
+    margin-bottom: 20px;
+  }
+
+  .workTitle {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--secondary);
+  }
+
+  .details {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .techStacks ul {
+    display: flex;
+    list-style: none;
+    margin: 20px;
+    margin-left: 0;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  .techStacks ul li {
+    padding: 5px;
+    background-color: var(--blue-background);
+    margin: 5px;
+    font-size: 12px;
+    color: var(--primary);
+    border-radius: 5px;
+  }
+
   #modal {
+    position: fixed;
     display: none;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
     z-index: 200;
     width: 100%;
+    height: 100vh;
     background: rgba(180, 173, 173, 0.858);
-    border: 1px solid #ebecf0;
-    box-shadow: 1px 2px 3px;
-    border-radius: 10px;
   }
 
   .modal-container {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 95%;
+    max-width: 800px;
     border-radius: 10px;
     background-color: white;
-    margin: 40px 0 40px 0;
+    height: 80%;
     padding: 20px;
   }
 
@@ -1285,8 +1268,11 @@ main {
 
   .idcard-modal {
     margin-top: 1vh;
-    height: 100%;
     width: 100%;
+    height: 45vh;
+    min-width: 200px;
+
+    /* object-fit: cover; */
   }
 
   .lorem {
@@ -1342,60 +1328,18 @@ main {
     margin-top: -2.2vh;
   }
 
-  .modal-html {
+  .language-button {
     margin-top: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    margin-left: 10px;
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
-    width: 35px;
-    height: 20px;
+    width: max-content;
     color: #6070ff;
     letter-spacing: 0.03em;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .modal-css {
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 30px;
-    height: 20px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 1vh;
-  }
-
-  .modal-javaScript {
-    margin-top: 3vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 4px 12px;
-    background: #ebebff;
-    border-radius: 8px;
-    width: 68px;
-    height: 20px;
-    color: #6070ff;
-    letter-spacing: 0.03em;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    margin-left: 1vh;
   }
 
   .buttons-div {
@@ -1404,49 +1348,30 @@ main {
     align-items: center;
     height: 7vh;
     margin-top: 3vh;
+    padding-top: 12px;
   }
 
-  .SeeLive-button {
+  .SeeLiveSource-button {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     background: #fff;
     border: 1px solid #396df2;
     box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 6px;
-    height: 4.5vh;
-    width: 14vh;
+    padding: 10px 16px;
+    margin-left: 10px;
+    width: max-content;
     color: #396df2;
     cursor: pointer;
   }
 
-  .SeeSource-button {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #fff;
-    border: 1px solid #396df2;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 6px;
-    height: 4.5vh;
-    width: 17vh;
-    color: #396df2;
-    margin-left: 2vh;
-    cursor: pointer;
-  }
-
-  .live-button-icon {
+  .button-icon {
     height: 20px;
     width: 18px;
+    margin-left: 10px;
   }
 
-  .source-button-icon {
-    height: 20px;
-    width: 18px;
-  }
-
-  .SeeLive-button:hover,
-  .SeeSource-button:hover {
+  .SeeLiveSource-button:hover {
     background-color: #396df2;
     color: white;
     transition: 0.3s;
@@ -1681,10 +1606,6 @@ main {
   .socialLink {
     display: flex;
     margin: 10px 0;
-  }
-
-  .socialLink li {
-    list-style: none;
   }
 
   .icons {

@@ -1,4 +1,7 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable no-plusplus */
+/* eslint-disable prefer-destructuring */
+
 const menuLinks = document.getElementById('menuChild');
 const hamburger = document.getElementById('menuIcon');
 const maincontent = document.getElementById('mobmain');
@@ -11,6 +14,11 @@ const desktopMenu = document.querySelector('.desktopMenu');
 const modal = document.querySelector('#modal');
 const projectImage = document.querySelector('.idcard-modal');
 const projectTitle = document.querySelector('.modal-tonic');
+const description = document.getElementById('description');
+const technologies = document.getElementById('techs');
+const technologies2 = document.getElementById('techs2');
+const technologies3 = document.getElementById('techs3');
+// const technologies = document.querySelectorAll('.language-button');
 
 openMenu.addEventListener('click', (() => {
   menuLinks.style.display = 'flex';
@@ -68,6 +76,35 @@ const storeData = [
   },
 ];
 
+function createWorkCard(name, description, imagesrc, technologies) {
+  let techStacks = '';
+
+  technologies.forEach((technologies) => {
+    techStacks += ` <li>${technologies}</li>`;
+  });
+
+  const workHTML = document.createElement('article');
+  workHTML.className = 'article';
+  workHTML.innerHTML = `<img src='${imagesrc}' alt="work Image" class="workImage">
+                      <div>
+                          <div class="workTitle">${name}</div
+                            <div class="modal-canopy">
+                              <ul class="back-end-dev-modal">
+                                <h2 class="canopyModal" >CANOPY</h2>
+                                <li class="back-modal">Back End Dev</li>
+                                <li class="Type2015-modal">2015</li>
+                              </ul>
+                            </div>
+                          <p class="details" >${description}</p>
+                          <div class="language-button-modal">
+                              <ul>
+                                ${techStacks}
+                              </ul>
+                          </div>
+                          <button class="visitButton seeProject">See Project</button>
+                      </div>`;
+}
+
 function disappearButton() {
   modal.style.display = 'none';
   maincontent.classList.remove('blur');
@@ -79,6 +116,10 @@ function SeeProject() {
   maincontent.classList.add('blur');
   projectImage.src = storeData[0].imagesrc;
   projectTitle.innerHTML = storeData[0].name;
+  description.innerHTML = storeData[0].description;
+  technologies.innerHTML = storeData[0].technologies[0];
+  technologies2.innerHTML = storeData[0].technologies[1];
+  technologies3.innerHTML = storeData[0].technologies[2];
 }
 
 function Seeproject2() {
@@ -87,6 +128,10 @@ function Seeproject2() {
   maincontent.classList.add('blur');
   projectImage.src = storeData[1].imagesrc;
   projectTitle.innerHTML = storeData[1].name;
+  description.innerHTML = storeData[1].description;
+  technologies.innerHTML = storeData[0].technologies[0];
+  technologies2.innerHTML = storeData[0].technologies[1];
+  technologies3.innerHTML = storeData[0].technologies[2];
 }
 
 function Seeproject3() {
@@ -95,6 +140,10 @@ function Seeproject3() {
   maincontent.classList.add('blur');
   projectImage.src = storeData[2].imagesrc;
   projectTitle.innerHTML = storeData[2].name;
+  description.innerHTML = storeData[2].description;
+  technologies.innerHTML = storeData[0].technologies[0];
+  technologies2.innerHTML = storeData[0].technologies[1];
+  technologies3.innerHTML = storeData[0].technologies[2];
 }
 
 function Seeproject4() {
@@ -103,4 +152,8 @@ function Seeproject4() {
   maincontent.classList.add('blur');
   projectImage.src = storeData[3].imagesrc;
   projectTitle.innerHTML = storeData[3].name;
+  description.innerHTML = storeData[3].description;
+  technologies.innerHTML = storeData[0].technologies[0];
+  technologies2.innerHTML = storeData[0].technologies[1];
+  technologies3.innerHTML = storeData[0].technologies[2];
 }
