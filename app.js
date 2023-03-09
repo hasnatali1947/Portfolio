@@ -18,7 +18,14 @@ const description = document.getElementById('description');
 const technologies = document.getElementById('techs');
 const technologies2 = document.getElementById('techs2');
 const technologies3 = document.getElementById('techs3');
-// const technologies = document.querySelectorAll('.language-button');
+const form = document.getElementById('form');
+const form2 = document.getElementById('form2');
+const error = document.getElementById('error');
+const error2 = document.getElementById('error2');
+const Name = document.getElementById('name');
+const Name2 = document.getElementById('name2');
+const textArea = document.getElementById('textArea');
+const textArea2 = document.getElementById('textArea2');
 
 openMenu.addEventListener('click', (() => {
   menuLinks.style.display = 'flex';
@@ -157,3 +164,33 @@ function Seeproject4() {
   technologies2.innerHTML = storeData[0].technologies[1];
   technologies3.innerHTML = storeData[0].technologies[2];
 }
+
+/// //////form///////////////
+
+form.addEventListener('submit', ((e) => {
+  e.preventDefault();
+  const email = document.getElementById('email');
+  if (email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    error.classList.toggle('showError');
+    setTimeout(() => {
+      email.value = email.value.toLowerCase();
+      error.classList.toggle('showError');
+    }, [3000]);
+  }
+}));
+
+form2.addEventListener('submit', ((e) => {
+  e.preventDefault();
+  const email2 = document.getElementById('email2');
+  if (email2.value === email2.value.toLowerCase()) {
+    form2.submit();
+  } else {
+    error2.classList.toggle('showError');
+    setTimeout(() => {
+      email2.value = email2.value.toLowerCase();
+      error2.classList.toggle('showError');
+    }, [3000]);
+  }
+}));
