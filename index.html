@@ -433,6 +433,7 @@
             to help with it
           </p>
           <form
+            id="form"
             class="form"
             action="https://formspree.io/f/mdovglbl"
             method="post"
@@ -440,6 +441,7 @@
             <ul class="footer-ul">
               <li>
                 <input
+                  id="name"
                   class="user_name"
                   name="User_Name"
                   type="text"
@@ -450,6 +452,7 @@
               </li>
               <li>
                 <input
+                  id="email"
                   class="user_email"
                   name="User_Email"
                   type="email"
@@ -459,14 +462,18 @@
                 </li>
               <li>
                 <textarea
-                class="massage"
-                name="massage"
+                  id="textArea"
+                  class="massage"
+                  name="massage"
                   required
                   placeholder="write your massage here"
                   maxlength="500"
                   cols="30"
                   rows="10"
                 ></textarea>
+              </li>
+              <li>
+                <div id="error" >Email Need to be in lower case</div>
               </li>
               <li class="get-in-touch-button">
                 <button class="get_in_touch" type="submit">Get in touch</button>
@@ -865,12 +872,14 @@
           </p>
           <form
               class="form"
+              id="form2"
               action="https://formspree.io/f/mdovglbl"
               method="post">
               <ul class="footer-ul">
                 <li>
                     <input
                     class="user_name"
+                    id="name2"
                     name="User_Name"
                     type="text"
                     required
@@ -881,6 +890,7 @@
                 <li>
                   <input
                     class="user_email"
+                    id="email2"
                     name="User_Email"
                     type="email"
                     required
@@ -890,6 +900,7 @@
                 <li>
                   <textarea
                     class="massage"
+                    id="textArea2"
                     name="massage"
                     required
                     placeholder="write your massage here"
@@ -897,6 +908,9 @@
                     cols="30"
                     rows="10"
                   ></textarea>
+                </li>
+                <li>
+                  <div id="error2" >Email Need to be in lower case</div>
                 </li>
                 <li class="get-in-touch-button">
                   <button class="get_in_touch" type="submit">Get in touch</button>
