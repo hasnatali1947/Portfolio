@@ -9,22 +9,74 @@
   </head>
 
   <body>
+
+    <!-- //////////////modal//////////////////// -->
+
+    <article class="modal" id="modal">
+      <div class="modal-container">
+          <div class="modal-tonic-container" >
+              <h2 class="modal-tonic" ></h2>
+              <button type="button" class="cross" onclick="disappearButton()" >
+              x
+              </button>
+          </div>
+          <div class="modal-canopy">
+            <ul class="back-end-dev-modal">
+              <h2 class="canopyModal" >CANOPY</h2>
+              <li class="back-modal">Back End Dev</li>
+              <li class="Type2015-modal">2015</li>
+            </ul>
+          </div>
+        <div>
+          <ul class="portfolio-idcard">
+            <li>
+              <img class="idcard-modal" src="" alt="card 1" />
+            </li>
+          </ul>
+        </div>
+        <div class="lorem-button-div">
+          <p class="lorem" id="description"></p>
+          <div class="language-buttons-div">  
+            <div class="language-button-modal">
+              <div class="language-button" id="techs"></div>
+              <div class="language-button" id="techs2"></div>
+              <div class="language-button" id="techs3"></div>
+            </div>
+            <div class="buttons-div">
+              <button type="button" class="SeeLiveSource-button">See Live <img class="button-icon" src="Icon.png" alt=""> </button>
+              <button type="button" class="SeeLiveSource-button">See Source <img class="button-icon" src="githubOnIcon.svg" alt="" srcset=""></button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </article>
+
     <header class="header-mobile">
       <div class="My-Logo">
-        <a href="#" class="My-logo2">
+        <a href="#" class="My-logo2" id="logo">
         HASNAT
         </a>
       </div>
+      
       <nav class="header-Line-parent">
-        <img src="Union.svg" alt="menu-icon" />
+        <img class="openMenu" src="Union.svg" alt="menu-icon" id="menuIcon"/>
+      </nav>
+      <nav class="headerLineParent" id="menuChild">
+        <ul class="Menu">
+          <li><img class="closeMenu" src="Icon-Cancel.svg" alt="cancel icon" id="cancel-icon" ></li>
+          <li class="menuItem1"><a class="a" href="#portfolio">Portfolio</a></li>
+          <li class="menuItem2"><a class="a" href="#aboutme">About</a></li>
+          <li class="menuItem3"><a class="a" href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
-    <main class="mob-main">  
+    <main class="mob-main" id="mobmain">  
       
       <!-- home section 1 -->
 
-      <section class="section-1">
+      <section class="section-1" id="portfolio">
         <div class="background-img">
         </div>
         <div class="heading-1">
@@ -78,7 +130,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard">
               <li>
-                <img class="idcard-1-img idcard" src="Portfolio (1).png" alt="card 1" />
+                <img class="idcard-1-img idcard" src="Snapshoot Portfolio.png" alt="card 1" />
               </li>
             </ul>
           </div>
@@ -109,7 +161,7 @@
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
 
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="SeeProject()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
 
@@ -119,7 +171,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard-2">
               <li>
-                <img class="idcard-2-img idcard" src="Portfolio (2).png" alt="card 2" />
+                <img class="idcard-2-img idcard" src="desktop-2.png" alt="card 2" />
               </li>
             </ul>
           </div>
@@ -151,7 +203,7 @@
               <div class="tonic-1-css">css</div>
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="Seeproject2()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
 
@@ -161,7 +213,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard">
               <li>
-                <img class="idcard-3-img idcard" src="Portfolio.png" alt="card 3" />
+                <img class="idcard-3-img idcard" src="desktop-3.png" alt="card 3" />
               </li>
             </ul>
           </div>
@@ -192,7 +244,7 @@
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
 
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="Seeproject3()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
 
@@ -202,7 +254,7 @@
           <div class="div-1">
             <ul class="portfolio-idcard">
               <li>
-                <img class="idcard-4-img idcard" src="Portfolio (3).png" alt="card 4" />
+                <img class="idcard-4-img idcard" src="desktop-4.png" alt="card 4" />
               </li>
             </ul>
           </div>
@@ -235,14 +287,14 @@
               <div class="tonic-1-css">css</div>
               <div class="tonic-1-javaScript">javaScript</div>
             </div>
-            <button type="button" class="Button-SeeProject">See Project</button>
+            <button type="button" onclick="Seeproject4()" class="Button-SeeProject">See Project</button>
           </div>
         </article>
       </section>
 
       <!-- about myself section 3 -->
 
-      <section class="section-3">
+      <section class="section-3" id="aboutme">
         <div class="div-1">
           <div class="heading-2">
             <h1 class="About-myself">
@@ -362,7 +414,7 @@
 
       <!-- /////////footer///////////// -->
 
-      <footer class="Contact_form_container">
+      <footer class="Contact_form_container" id="contact" >
         <div class="div-imges">
           <img class="img-1" src="top-1.png" alt="" />
           <img class="img-2" src="top2.png" alt="" />
@@ -449,56 +501,55 @@
         </ul>
       </nav>
     </header>
-
-    <main class="desktop-menu">
-      <section class="section-1">
-        <div class="header-BG"></div>
-        <div class="heading-1">
-        <h1 class="First-heading">
-          I'm Hasnat <br class="br" />
-          Glad to see you 
-          <span class="exclimationMark">!</span>
-        </h1>
-        <p class="First-heading-description">
-          I'm a software developer! I can help you build a prduct,feature or
-          website Look through some of my work and experience! if you like
-          what you see and have a project you need coded, don't hesitate to
-          contact me.
-        </p>
-        <h3 class="Connect-heading">LET'S CONNECT</h3>
-        
-        <div class="icons-div">
-          
-        <ul class="socialLink">
-          <li>
-          <a href="https://twitter.com/home?lang=en"
-            ><img class="twitter" src="Vector (8).svg" alt="twitter"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/feed/"
-          ><img class="linkedin icons" src="Linkedin icon (1).svg" alt="linkedin"
-          /></a>
-        </li>
-        <li>
-          <a href="https://medium.com/log-in"
-            ><img class="medium icons" src="Vector (9).svg" alt="medium"
-            /></a>
-        </li>
-        <li>
-          <a href="https://github.com/"
-            ><img class="github icons" src="Vector (11).svg" alt="github"
-          /></a>
-        </li>
-        <li>
-          <a href="https://venture.angellist.com/v/login"
-          ><img class="angellist icons" src="Vector (10).svg" alt="angellist"
-          /></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </section>
+    <main class="desktop-menu" id="desktopMenu">
+        <section class="section-1">
+            <div class="header-BG"></div>
+          <div class="heading-1">
+            <h1 class="First-heading">
+              I'm Hasnat <br class="br" />
+              Glad to see you 
+              <span class="exclimationMark">!</span>
+            </h1>
+            <p class="First-heading-description">
+              I'm a software developer! I can help you build a prduct,feature or
+              website Look through some of my work and experience! if you like
+              what you see and have a project you need coded, don't hesitate to
+              contact me.
+            </p>
+            <h3 class="Connect-heading">LET'S CONNECT</h3>
+            
+            <div class="icons-div">
+              
+              <ul class="socialLink">
+                <li>
+                  <a href="https://twitter.com/home?lang=en"
+                    ><img class="twitter" src="Vector (8).svg" alt="twitter"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/feed/"
+                  ><img class="linkedin icons" src="Linkedin icon (1).svg" alt="linkedin"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://medium.com/log-in"
+                    ><img class="medium icons" src="Vector (9).svg" alt="medium"
+                    /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/"
+                    ><img class="github icons" src="Vector (11).svg" alt="github"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://venture.angellist.com/v/login"
+                  ><img class="angellist icons" src="Vector (10).svg" alt="angellist"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
         <!-- artical section 2 -->
 
@@ -538,8 +589,9 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-  
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a" >
+                <button type="button" onclick="SeeProject()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
           </article>
 
@@ -574,7 +626,9 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a">
+                <button type="button" onclick="Seeproject2()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
 
               <div class="div-2-artical-2">
@@ -622,8 +676,9 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-  
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a">
+                <button type="button" onclick="Seeproject3()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
           </article>
 
@@ -659,7 +714,9 @@
                 <div class="tonic-1-css">css</div>
                 <div class="tonic-1-javaScript">javaScript</div>
               </div>
-              <button type="button" class="Button-SeeProject">See Project</button>
+              <a href="#modal" class="Seeproject-a">
+                <button type="button" onclick="Seeproject4()" class="Button-SeeProject">See Project</button>
+              </a>
             </div>
 
               <div class="div-2-artical-2">
@@ -851,6 +908,6 @@
       </footer>
 
   </main>
-  
+  <script src="app.js"></script>
 </body>
 </html>
