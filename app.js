@@ -167,8 +167,8 @@ function Seeproject4() {
 
 /// //////form///////////////
 
-form.addEventListener('submit', ((e) => {
-  e.preventDefault();
+form.addEventListener('submit', ((event) => {
+  event.preventDefault();
   const email = document.getElementById('email');
   if (email.value === email.value.toLowerCase()) {
     form.submit();
@@ -181,8 +181,8 @@ form.addEventListener('submit', ((e) => {
   }
 }));
 
-form2.addEventListener('submit', ((e) => {
-  e.preventDefault();
+form2.addEventListener('submit', ((event) => {
+  event.preventDefault();
   const email2 = document.getElementById('email2');
   if (email2.value === email2.value.toLowerCase()) {
     form2.submit();
