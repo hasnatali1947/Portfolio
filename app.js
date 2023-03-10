@@ -195,6 +195,26 @@ form2.addEventListener('submit', ((e) => {
   }
 }));
 
+/// ////Local Storage on  moblile////////////
+
+form.addEventListener('keyup', () => {
+  const object = {
+    name: Name.value,
+    email: email.value,
+    textArea: textArea.value,
+  };
+  localStorage.mobilecontact = JSON.stringify(object);
+});
+
+window.addEventListener('load', () => {
+  const objInLocalStorage = JSON.parse(localStorage.mobilecontact);
+  Name.value = objInLocalStorage.name;
+  email.value = objInLocalStorage.email;
+  textArea.value = objInLocalStorage.textArea;
+});
+
+/// ///////Local storage on desktop/////////////////
+
 form2.addEventListener('keyup', () => {
   const userObj = {
     name: Name2.value,
