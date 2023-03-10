@@ -196,17 +196,17 @@ form2.addEventListener('submit', ((e) => {
 }));
 
 form2.addEventListener('keyup', () => {
-  const obj = {
+  const userObj = {
     name: Name2.value,
     email: email2.value,
     textArea: textArea2.value,
   };
-  localStorage.contactValue = JSON.stringify(obj);
+  localStorage.contactValue = JSON.stringify(userObj);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
-  const obj = JSON.parse(localStorage.contactValue);
-  Name2.value = obj.name;
-  email2.value = obj.email;
-  textArea2.value = obj.textArea;
+  const objInLocalStorage = JSON.parse(localStorage.contactValue);
+  Name2.value = objInLocalStorage.name;
+  email2.value = objInLocalStorage.email;
+  textArea2.value = objInLocalStorage.textArea;
 });
