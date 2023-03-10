@@ -26,6 +26,8 @@ const Name = document.getElementById('name');
 const Name2 = document.getElementById('name2');
 const textArea = document.getElementById('textArea');
 const textArea2 = document.getElementById('textArea2');
+const email2 = document.getElementById('email2');
+const email = document.getElementById('email');
 
 openMenu.addEventListener('click', (() => {
   menuLinks.style.display = 'flex';
@@ -169,7 +171,6 @@ function Seeproject4() {
 
 form.addEventListener('submit', ((e) => {
   e.preventDefault();
-  const email = document.getElementById('email');
   if (email.value === email.value.toLowerCase()) {
     form.submit();
   } else {
@@ -183,7 +184,6 @@ form.addEventListener('submit', ((e) => {
 
 form2.addEventListener('submit', ((e) => {
   e.preventDefault();
-  const email2 = document.getElementById('email2');
   if (email2.value === email2.value.toLowerCase()) {
     form2.submit();
   } else {
@@ -194,3 +194,19 @@ form2.addEventListener('submit', ((e) => {
     }, [3000]);
   }
 }));
+
+form2.addEventListener('keyup', () => {
+  const obj = {
+    name: Name2.value,
+    email: email2.value,
+    textArea: textArea2.value,
+  };
+  localStorage.contactValue = JSON.stringify(obj);
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const obj = JSON.parse(localStorage.contactValue);
+  Name2.value = obj.name;
+  email2.value = obj.email;
+  textArea2.value = obj.textArea;
+});
