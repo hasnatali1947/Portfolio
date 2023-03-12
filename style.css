@@ -22,13 +22,13 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: 8vh;
   z-index: 100;
   position: fixed;
+  background-color: rgba(255, 255, 255, 0.709);
 }
 
 main {
@@ -121,7 +121,7 @@ main {
 
   .modal-tonic {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 52px;
   }
 
@@ -216,7 +216,7 @@ main {
     color: #67798e;
   }
 
-  .header-desktop {
+  .menuItems-div {
     display: none;
   }
 
@@ -224,7 +224,7 @@ main {
     display: none;
   }
 
-  .header-mobile {
+  .header {
     background-color: white;
     position: relative;
     justify-content: space-between;
@@ -238,7 +238,7 @@ main {
     margin-right: 5%;
   }
 
-  .My-logo2 {
+  .My-logo-h1 {
     color: #6070ff;
     list-style: none;
     text-decoration: none;
@@ -321,12 +321,16 @@ main {
     position: relative;
   }
 
+  .header-BG {
+    display: none;
+  }
+
   .background-img {
     position: absolute;
     height: 90vh;
     margin-top: 10vh;
     width: 100%;
-    background-image: url("header-shapes\ mobile.png");
+    background-image: url("IMAGES/header-shapes\ mobile.png");
     background-position: center;
     background-size: 100% 100%;
     z-index: -1;
@@ -399,7 +403,7 @@ main {
     width: 94%;
   }
 
-  .icons-div {
+  .icons-div-mob {
     display: flex;
     margin: 3%;
     width: 94%;
@@ -414,8 +418,11 @@ main {
   }
 
   /* artical sections */
-
   .section-2 {
+    display: none;
+  }
+
+  .Mob-section-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,6 +466,10 @@ main {
     color: #172b4d;
   }
 
+  .Tonic-1 a h1 {
+    font-size: 32px;
+  }
+
   .Canopy-1 {
     display: flex;
     flex-direction: row;
@@ -473,17 +484,8 @@ main {
     color: #344563;
   }
 
-  .back-end-dev {
-    display: flex;
-    margin-left: 3vh;
-    opacity: 90%;
-    color: #7a869a;
-    font-size: 13px;
-    list-style-type: disc;
-  }
-
   .Type2015 {
-    margin-left: 3vh;
+    margin-left: 4vh;
   }
 
   .Tonic-1-description {
@@ -621,6 +623,10 @@ main {
     color: #172b4d;
   }
 
+  .Multi-post a h1 {
+    font-size: 32px;
+  }
+
   .Canopy-2 a {
     text-decoration: none;
     color: #344563;
@@ -633,19 +639,6 @@ main {
     font-weight: 600;
     font-size: 13px;
     margin-top: 2vh;
-  }
-
-  .Type2015-2 {
-    margin-left: 6vh;
-  }
-
-  .back-end-dev-2 {
-    display: flex;
-    margin-left: 3vh;
-    opacity: 90%;
-    color: #7a869a;
-    font-size: 13px;
-    list-style-type: disc;
   }
 
   .Multi-description {
@@ -683,11 +676,6 @@ main {
     margin-top: -3vh;
   }
 
-  .Tonic-2 a {
-    text-decoration: none;
-    color: #172b4d;
-  }
-
   .Canopy-3 a {
     text-decoration: none;
     color: #344563;
@@ -701,19 +689,6 @@ main {
     font-size: 13px;
     color: #7a869a;
     margin-top: 2vh;
-  }
-
-  .Type2015-3 {
-    margin-left: 6vh;
-  }
-
-  .back-end-dev-3 {
-    display: flex;
-    margin-left: 5vh;
-    opacity: 90%;
-    color: #7a869a;
-    font-size: 13px;
-    list-style-type: disc;
   }
 
   .Tonic-1-description-2 {
@@ -751,11 +726,6 @@ main {
     margin-top: -20px;
   }
 
-  .Multi-post-2 a {
-    text-decoration: none;
-    color: #172b4d;
-  }
-
   .Canopy-4 a {
     text-decoration: none;
     color: #344563;
@@ -771,13 +741,9 @@ main {
     margin-top: 2vh;
   }
 
-  .Type2015-4 {
-    margin-left: 6vh;
-  }
-
-  .back-end-dev-4 {
+  .back-end-dev {
     display: flex;
-    margin-left: 5vh;
+    margin-left: 4vh;
     opacity: 90%;
     color: #7a869a;
     font-size: 13px;
@@ -1003,6 +969,10 @@ main {
     background-color: #fff;
   }
 
+  .div-BG {
+    display: none;
+  }
+
   .Contact_form {
     display: flex;
     position: relative;
@@ -1184,7 +1154,7 @@ main {
   }
 }
 
-/* //////////////media-query.////////// */
+/* ////////////// media-query ON DESKTOP ////////// */
 
 @media (min-width: 767px) {
   header div {
@@ -1413,6 +1383,10 @@ main {
     filter: blur(15px);
   }
 
+  .headerLineParent-mob {
+    display: none;
+  }
+
   .My-logo-h1 {
     transition: 0.3s ease-in-out;
     scale: 1.25;
@@ -1443,13 +1417,14 @@ main {
   .Tonic-1 a h1 {
     margin-top: 2.5vh;
     margin-left: 3vh;
+    font-size: 48px;
   }
 
   .header-BG {
     position: absolute;
     height: 90%;
     width: 98%;
-    background-image: url("Header\ bg.svg");
+    background-image: url("IMAGES/Header\ bg.svg");
     background-position: center;
     background-size: 100% 100%;
     z-index: 1;
@@ -1465,6 +1440,10 @@ main {
     z-index: 100;
     position: fixed;
     background-color: #fff;
+  }
+
+  .header-mobile-menu {
+    display: none;
   }
 
   .Menu {
@@ -1511,11 +1490,7 @@ main {
     text-decoration: none;
   }
 
-  .header-mobile {
-    display: none;
-  }
-
-  .mob-main {
+  .you {
     display: none;
   }
 
@@ -1613,10 +1588,14 @@ main {
     z-index: 1;
   }
 
+  .icons-div-mob {
+    display: none;
+  }
+
   .icons-div {
     width: 60%;
     display: flex;
-    margin: 10px 0;
+    margin: 30px 0;
     z-index: 1;
   }
 
@@ -1638,6 +1617,10 @@ main {
   }
 
   /* artical sections */
+
+  .Mob-section-2 {
+    display: none;
+  }
 
   .section-2 {
     display: flex;
@@ -1710,7 +1693,7 @@ main {
 
   .back-end-dev {
     display: flex;
-    margin-left: 3vh;
+    margin-left: 4vh;
     opacity: 90%;
     color: #7a869a;
     list-style-type: disc;
@@ -1720,7 +1703,7 @@ main {
   }
 
   .Type2015 {
-    margin-left: 3vh;
+    margin-left: 4vh;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -1856,6 +1839,7 @@ main {
   }
 
   .multi-post-heading {
+    font-size: 45px;
     margin-left: 3vh;
   }
 
@@ -2131,6 +2115,7 @@ main {
   .contact-description {
     width: 60%;
     font-size: 16px;
+    z-index: 100;
   }
 
   .Contact_form {
@@ -2154,10 +2139,7 @@ main {
   }
 
   .div-imges {
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    z-index: 1;
+    display: none;
   }
 
   .div2-imges {
@@ -2172,7 +2154,7 @@ main {
     position: absolute;
     background-position: center;
     background-size: 100% 100%;
-    background-image: url("contact\ form\ background\ shapes.svg");
+    background-image: url("IMAGES/contact\ form\ background\ shapes.svg");
     z-index: 2;
     margin-left: 10%;
     margin-top: 10%;
@@ -2312,7 +2294,7 @@ main {
     margin-top: 40px;
   }
 
-  #error2 {
+  #error {
     font-size: 0;
     background-color: rgb(237, 55, 55);
     padding: 2px 10px;

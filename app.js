@@ -19,14 +19,10 @@ const technologies = document.getElementById('techs');
 const technologies2 = document.getElementById('techs2');
 const technologies3 = document.getElementById('techs3');
 const form = document.getElementById('form');
-const form2 = document.getElementById('form2');
 const error = document.getElementById('error');
-const error2 = document.getElementById('error2');
 const Name = document.getElementById('name');
 const Name2 = document.getElementById('name2');
 const textArea = document.getElementById('textArea');
-const textArea2 = document.getElementById('textArea2');
-const email2 = document.getElementById('email2');
 const email = document.getElementById('email');
 
 openMenu.addEventListener('click', (() => {
@@ -62,25 +58,25 @@ const storeData = [
   {
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
-    imagesrc: 'Snapshoot Portfolio.png',
+    imagesrc: 'IMAGES/Snapshoot Portfolio.png',
     technologies: ['html', 'css', 'javaScript'],
   },
   {
     name: 'Multi-post',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
-    imagesrc: 'desktop-2.png',
+    imagesrc: 'IMAGES/desktop-2.png',
     technologies: ['html', 'css', 'javaScript'],
   },
   {
     name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
-    imagesrc: 'desktop-3.png',
+    imagesrc: 'IMAGES/desktop-3.png',
     technologies: ['html', 'css', 'javaScript'],
   },
   {
     name: 'Multi-post',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
-    imagesrc: 'desktop-4.png',
+    imagesrc: 'IMAGES/desktop-4.png',
     technologies: ['html', 'css', 'javaScript'],
   },
 ];
@@ -182,20 +178,7 @@ form.addEventListener('submit', ((e) => {
   }
 }));
 
-form2.addEventListener('submit', ((e) => {
-  e.preventDefault();
-  if (email2.value === email2.value.toLowerCase()) {
-    form2.submit();
-  } else {
-    error2.classList.toggle('showError');
-    setTimeout(() => {
-      email2.value = email2.value.toLowerCase();
-      error2.classList.toggle('showError');
-    }, [3000]);
-  }
-}));
-
-/// ////Local Storage on  moblile////////////
+/// ////Local Storage////////////
 
 form.addEventListener('keyup', () => {
   const object = {
@@ -211,22 +194,4 @@ window.addEventListener('load', () => {
   Name.value = objInLocalStorage.name;
   email.value = objInLocalStorage.email;
   textArea.value = objInLocalStorage.textArea;
-});
-
-/// ///////Local storage on desktop/////////////////
-
-form2.addEventListener('keyup', () => {
-  const userObj = {
-    name: Name2.value,
-    email: email2.value,
-    textArea: textArea2.value,
-  };
-  localStorage.contactValue = JSON.stringify(userObj);
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  const objInLocalStorage = JSON.parse(localStorage.contactValue);
-  Name2.value = objInLocalStorage.name;
-  email2.value = objInLocalStorage.email;
-  textArea2.value = objInLocalStorage.textArea;
 });
