@@ -172,7 +172,23 @@ main {
     flex-wrap: wrap;
   }
 
-  .SeeLiveSource-button {
+  .SeeLive-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #396df2;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    width: max-content;
+    padding: 7px 13px;
+    margin-right: 10px;
+    color: #396df2;
+    cursor: pointer;
+    margin-bottom: 6px;
+  }
+
+  .SeeSource-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1338,7 +1354,21 @@ main {
     padding-top: 12px;
   }
 
-  .SeeLiveSource-button {
+  .SeeLive-button {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #396df2;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 6px;
+    padding: 10px 16px;
+    margin-left: 10px;
+    width: max-content;
+    color: #396df2;
+    cursor: pointer;
+  }
+
+  .SeeSource-button {
     display: flex;
     align-items: center;
     background: #fff;
@@ -1358,7 +1388,13 @@ main {
     margin-left: 10px;
   }
 
-  .SeeLiveSource-button:hover {
+  .SeeLive-button:hover {
+    background-color: #396df2;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .SeeSource-button:hover {
     background-color: #396df2;
     color: white;
     transition: 0.3s;
