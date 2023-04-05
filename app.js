@@ -18,6 +18,8 @@ const description = document.getElementById('description');
 const technologies = document.getElementById('techs');
 const technologies2 = document.getElementById('techs2');
 const technologies3 = document.getElementById('techs3');
+const SeeLive = document.getElementById('SeeLive-button');
+const SeeSource = document.getElementById('SeeSource-button');
 const form = document.getElementById('form');
 const error = document.getElementById('error');
 const Name = document.getElementById('name');
@@ -56,10 +58,12 @@ for (let i = 0; i < navlinks.length; i += 1) {
 
 const storeData = [
   {
-    name: 'Tonic',
+    name: 'Worrior Cars',
     description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
-    imagesrc: 'IMAGES/Snapshoot Portfolio.png',
+    imagesrc: 'IMAGES/worrior-cars.png',
     technologies: ['html', 'css', 'javaScript'],
+    SeeLive: 'https://hasnatali1947.github.io/Warrior-cars/',
+    SeeSource: 'https://github.com/hasnatali1947/Warrior-cars#-live-demo-',
   },
   {
     name: 'Multi-post',
@@ -80,35 +84,6 @@ const storeData = [
     technologies: ['html', 'css', 'javaScript'],
   },
 ];
-
-function createWorkCard(name, description, imagesrc, technologies) {
-  let techStacks = '';
-
-  technologies.forEach((technologies) => {
-    techStacks += ` <li>${technologies}</li>`;
-  });
-
-  const workHTML = document.createElement('article');
-  workHTML.className = 'article';
-  workHTML.innerHTML = `<img src='${imagesrc}' alt="work Image" class="workImage">
-                      <div>
-                          <div class="workTitle">${name}</div
-                            <div class="modal-canopy">
-                              <ul class="back-end-dev-modal">
-                                <h2 class="canopyModal" >CANOPY</h2>
-                                <li class="back-modal">Back End Dev</li>
-                                <li class="Type2015-modal">2015</li>
-                              </ul>
-                            </div>
-                          <p class="details" >${description}</p>
-                          <div class="language-button-modal">
-                              <ul>
-                                ${techStacks}
-                              </ul>
-                          </div>
-                          <button class="visitButton seeProject">See Project</button>
-                      </div>`;
-}
 
 function disappearButton() {
   modal.style.display = 'none';
@@ -162,6 +137,20 @@ function Seeproject4() {
   technologies2.innerHTML = storeData[0].technologies[1];
   technologies3.innerHTML = storeData[0].technologies[2];
 }
+
+SeeLive.addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.setAttribute('href', storeData[0].SeeLive);
+  link.setAttribute('target', '_blank');
+  link.click();
+});
+
+SeeSource.addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.setAttribute('href', storeData[0].SeeSource);
+  link.setAttribute('traget', '_blank');
+  link.click();
+});
 
 /// //////form///////////////
 
