@@ -22,7 +22,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-This is my portfolio Project. In which , all of my details are available.
+This is my portfolio Project.In which , all of my details are available.
 
 ## 🛠️ Built With <a name="built-with"></a>
 
