@@ -59,7 +59,7 @@ for (let i = 0; i < navlinks.length; i += 1) {
 const storeData = [
   {
     name: 'Worrior Cars',
-    description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
+    description: 'Warrior is a car company that has been creating impressive vehicles since 2001. Each car produced by Warrior is a testament to their commitment to excellence, incorporating the latest advancements in automotive engineering to provide drivers.',
     imagesrc: 'IMAGES/worrior-cars.png',
     technologies: ['html', 'css', 'javaScript'],
     SeeLive: 'https://hasnatali1947.github.io/Warrior-cars/',
