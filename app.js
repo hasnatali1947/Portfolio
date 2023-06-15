@@ -23,7 +23,6 @@ const Name = document.getElementById('name');
 const Name2 = document.getElementById('name2');
 const textArea = document.getElementById('textArea');
 const email = document.getElementById('email');
-
 const modal = createModal();
 document.body.appendChild(modal);
 
