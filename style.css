@@ -866,6 +866,7 @@ main {
     font-weight: 500;
     line-height: 24px;
     margin-left: 7%;
+    text-decoration: none;
   }
 
   .get-my-resume:hover {
