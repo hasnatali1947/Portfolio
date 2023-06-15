@@ -1989,6 +1989,7 @@ main {
     margin-top: 5vh;
     transition: 0.3s;
     cursor: pointer;
+    text-decoration: none;
   }
 
   .get-my-resume:hover {
@@ -1996,10 +1997,10 @@ main {
     background-color: rgba(26, 59, 208, 0.929);
     color: white;
     scale: 1.09;
-    word-spacing: 1.5px;
+    word-spacing: 1px;
   }
 
-  .get-my-resume:active {
+  a.get-my-resume:active {
     color: white;
     border: 1px solid rgb(255, 255, 255);
     background-color: blue;
