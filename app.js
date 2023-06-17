@@ -55,6 +55,14 @@ for (let i = 0; i < navlinks.length; i += 1) {
 
 /// /////////cards////////////////////
 
+function addGrayFilter(element) {
+  element.classList.add('gray-filter');
+}
+
+function removeGrayFilter(element) {
+  element.classList.remove('gray-filter');
+}
+
 function createModal() {
   const modal = document.createElement('article');
   modal.classList.add('modal');
